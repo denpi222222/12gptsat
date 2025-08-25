@@ -16,7 +16,7 @@ import dynamic from 'next/dynamic';
 
 import { useTranslation } from 'react-i18next';
 import { TabNavigation } from '@/components/tab-navigation';
-import { NeonTitle } from '@/components/NeonTitle';
+import { OctagonTitle } from '@/components/OctagonTitle';
 import { SparkRain } from '@/components/SparkRain';
 import { ReactiveAura } from '@/components/ReactiveAura';
 import { WalletConnectNoSSR as WalletConnect } from '@/components/web3/wallet-connect.no-ssr';
@@ -124,7 +124,7 @@ export default function HomePage() {
           onClick={() => {
             void forceSwitchToApeChain();
           }}
-          className='neon-button w-full h-12 text-base font-semibold bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-500 hover:to-orange-500'
+          className='btn-monad w-full h-12 text-base font-semibold'
         >
           🔄 Switch to ApeChain
         </Button>
@@ -132,7 +132,7 @@ export default function HomePage() {
     }
     return (
       <Link href={href} className='relative z-10 mt-auto block'>
-        <Button className='neon-button w-full flex items-center justify-center'>
+        <Button className='btn-monad w-full flex items-center justify-center'>
           {extra}
           {label}
         </Button>
@@ -151,7 +151,7 @@ export default function HomePage() {
           <div className='absolute inset-0 flex items-center justify-center'>
             <Image
               src='/favicon.ico'
-              alt='CrazyCube Logo'
+              alt='CrazyOctagon Logo'
               width={128}
               height={128}
               className='object-contain drop-shadow-[0_0_12px_rgba(56,189,248,.45)]'
@@ -177,7 +177,7 @@ export default function HomePage() {
           transition={{ duration: 1.6, repeat: Number.POSITIVE_INFINITY }}
           className='mt-2 text-center text-sm md:text-base text-cyan-200/80 max-w-[22rem]'
         >
-          {t?.('loadingSubtitle', 'Preparing your CrazyCube experience')}
+          {t?.('loadingSubtitle', 'Preparing your CrazyOctagon experience')}
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: [0, 1, 0] }}
@@ -191,17 +191,20 @@ export default function HomePage() {
   }
 
   return (
-    <div
-      className='min-h-screen mobile-content-wrapper bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 relative'
-      style={{
-        minHeight: '100vh',
-        position: 'relative',
-        zIndex: 1,
-        overflow: 'visible',
-      }}
-    >
-      {/* Global spark rain overlay (disabled on mobile to avoid layout shifts) */}
-      {!isMobile && <SparkRain />}
+      <div
+        className='min-h-screen mobile-content-wrapper bg-gradient-to-br from-[hsl(var(--monad-purple))] to-[hsl(var(--monad-blue))] relative'
+        style={{
+          minHeight: '100vh',
+          position: 'relative',
+          zIndex: 1,
+          overflow: 'visible',
+        }}
+      >
+        <div className='absolute top-4 right-4 z-50'>
+          <span className='px-3 py-1 rounded bg-[hsl(var(--monad-purple))] text-[hsl(var(--monad-offwhite))] text-xs font-bold'>MONAD TESTNET</span>
+        </div>
+        {/* Global spark rain overlay (disabled on mobile to avoid layout shifts) */}
+        {!isMobile && <SparkRain />}
       {/* Adding particle effect - reduced quantity */}
       {shouldShowParticles && !isMobile && (
         <ParticleEffect
@@ -232,7 +235,7 @@ export default function HomePage() {
               >
                 <Image
                   src='/favicon.ico'
-                  alt='CrazyCube Logo'
+                  alt='CrazyOctagon Logo'
                   width={80}
                   height={80}
                   className='object-contain drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]'
@@ -273,9 +276,9 @@ export default function HomePage() {
                     fillOpacity='0.32'
                   />
                 </svg>
-                <NeonTitle
-                  title={t('home.title', 'CrazyCube')}
-                  subtitle={t('home.subtitle', 'Where cubes cry and joke!')}
+                <OctagonTitle
+                  title={t('home.title', 'CrazyOctagon')}
+                  subtitle={t('home.subtitle', 'Where octagons cry and joke!')}
                 />
               </div>
             </div>
@@ -719,7 +722,7 @@ export default function HomePage() {
           })}
           className='mt-2 text-xs'
         >
-          {t('footer.madeWith', 'Made with ❤️ for the CrazyCube community')}
+          {t('footer.madeWith', 'Made with ❤️ for the CrazyOctagon community')}
         </motion.p>
       </motion.footer>
 

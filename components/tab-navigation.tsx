@@ -82,7 +82,7 @@ export const TabNavigation = React.memo(function TabNavigation() {
                   variant={isActive ? 'default' : 'ghost'}
                   className={`relative transition-all duration-200 text-xs md:text-sm px-2 md:px-3 py-1 md:py-2 ${
                     isActive
-                      ? `neon-button neon-outline`
+                      ? `btn-monad neon-outline`
                       : `text-foreground/70 hover:text-foreground hover:bg-card/50`
                   } ${showSpinner ? 'opacity-70' : ''}`}
                   onClick={() => go(tab.path)}

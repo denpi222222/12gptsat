@@ -87,8 +87,8 @@ export function SimpleToastProvider({
     };
 
     if (typeof window !== 'undefined') {
-      window.addEventListener('crazycube:toast', handler);
-      return () => window.removeEventListener('crazycube:toast', handler);
+      window.addEventListener('crazyoctagon:toast', handler);
+      return () => window.removeEventListener('crazyoctagon:toast', handler);
     }
     return undefined;
   }, [toast]);
