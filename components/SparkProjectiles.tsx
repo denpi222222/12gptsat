@@ -24,8 +24,8 @@ export function SparkProjectiles() {
         launchDot(fromX, fromY, toX, toY, () => ignite(el));
       }
     };
-    window.addEventListener('crazycube:spark-burst', onBurst as EventListener);
-    return () => window.removeEventListener('crazycube:spark-burst', onBurst as EventListener);
+    window.addEventListener('crazyoctagon:spark-burst', onBurst as EventListener);
+    return () => window.removeEventListener('crazyoctagon:spark-burst', onBurst as EventListener);
   }, []);
 
   return null;

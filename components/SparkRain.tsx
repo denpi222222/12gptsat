@@ -18,7 +18,7 @@ type SparkRainProps = {
   enabled?: boolean;
 };
 
-/** Canvas spark rain that reacts to 'crazycube:spark-burst' events. */
+/** Canvas spark rain that reacts to 'crazyoctagon:spark-burst' events. */
 export function SparkRain({ className = '', enabled = true }: SparkRainProps) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const [isClient, setIsClient] = useState(false);
@@ -122,8 +122,8 @@ export function SparkRain({ className = '', enabled = true }: SparkRainProps) {
       const y = detail?.y ?? window.innerHeight * 0.2;
       emitSparks(x, y);
     };
-    window.addEventListener('crazycube:spark-burst', onBurst as EventListener);
-    return () => window.removeEventListener('crazycube:spark-burst', onBurst as EventListener);
+    window.addEventListener('crazyoctagon:spark-burst', onBurst as EventListener);
+    return () => window.removeEventListener('crazyoctagon:spark-burst', onBurst as EventListener);
   }, [enabled, emitSparks]);
 
   useEffect(() => {

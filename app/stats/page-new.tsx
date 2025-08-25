@@ -112,7 +112,7 @@ export default function StatsPage() {
                 <p className='text-sm text-gray-600'>
                   {t(
                     'stats.subgraph.aboutParagraph1',
-                    'Data is fetched via The Graph – a decentralized blockchain indexing protocol. Our subgraph indexes all CrazyCubeUltimate events in real time, including NFT activations, pings, burns, revivals and breeds.'
+                    'Data is fetched via The Graph – a decentralized blockchain indexing protocol. Our subgraph indexes all CrazyOctagonUltimate events in real time, including NFT activations, pings, burns, revivals and breeds.'
                   )}
                 </p>
                 <p className='text-sm text-gray-600 mt-2'>

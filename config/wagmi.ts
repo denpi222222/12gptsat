@@ -51,7 +51,7 @@ if (typeof window !== 'undefined') {
       if (chain.id !== apeChain.id) {
         if (typeof window !== 'undefined') {
           window.dispatchEvent(
-            new CustomEvent('crazycube:toast', {
+            new CustomEvent('crazyoctagon:toast', {
               detail: {
                 title: 'Please switch to ApeChain',
                 description: 'Нажмите Switch Network в кошельке',
@@ -75,8 +75,8 @@ if (typeof window !== 'undefined') {
       walletConnect({
         projectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || '',
         metadata: {
-          name: 'CrazyCube',
-          description: 'CrazyCube NFT Game',
+          name: 'CrazyOctagon',
+          description: 'CrazyOctagon NFT Game',
           url: window.location.origin,
           icons: ['https://crazycube.xyz/favicon.ico'],
         },
@@ -87,7 +87,7 @@ if (typeof window !== 'undefined') {
         ? [
             metaMask({
               dappMetadata: {
-                name: 'CrazyCube',
+                name: 'CrazyOctagon',
                 url: window.location.origin,
                 iconUrl: 'https://crazycube.xyz/favicon.ico',
               },

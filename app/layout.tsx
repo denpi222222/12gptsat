@@ -52,7 +52,7 @@ function RootLayout({
         {/* eslint-disable-next-line @next/next/no-sync-scripts */}
         <script src='/trusted-types-tinyfill.js' suppressHydrationWarning />
       </head>
-      <body className={inter.className}>
+      <body className={`theme-monad ${inter.className}`}>
               {/* moved to ViewportFix component */}
       <ViewportFix />
 <ClientLayout>{children}</ClientLayout>

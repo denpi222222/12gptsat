@@ -50,7 +50,7 @@ export default function GraveyardPage() {
 
   if (!mounted)
     return (
-      <div className='min-h-screen bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 flex items-center justify-center text-white'>
+      <div className='min-h-screen graveyard-bg flex items-center justify-center text-white'>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -62,7 +62,7 @@ export default function GraveyardPage() {
     );
 
   return (
-    <div className='min-h-screen mobile-content-wrapper bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 p-4 pb-24'>
+    <div className='min-h-screen mobile-content-wrapper graveyard-bg p-4 pb-24'>
       {/* Quick cube disintegration animation on page entry */}
       {showCubeAnimation && (
         <motion.div

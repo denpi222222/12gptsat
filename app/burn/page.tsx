@@ -22,6 +22,7 @@ import {
 import { usePerformanceContext } from '@/hooks/use-performance-context';
 import { useMobile } from '@/hooks/use-mobile';
 import DOMPurify from 'isomorphic-dompurify';
+import { SparkRain } from '@/components/SparkRain';
 
 const FireAnimation = dynamic(() => import('@/components/fire-animation'), {
   ssr: false,
@@ -46,7 +47,7 @@ export default function BurnPage() {
   // Avoid hydration mismatch before mount
   if (!mounted) {
     return (
-      <div className='min-h-screen bg-gradient-to-br from-red-900 via-orange-900 to-red-900 flex items-center justify-center'>
+      <div className='min-h-screen burn-bg flex items-center justify-center'>
         <div className='text-white'>{t('common.loading', 'Loading...')}</div>
       </div>
     );
@@ -86,7 +87,8 @@ export default function BurnPage() {
       className='min-h-screen mobile-content-wrapper relative p-4'
     >
       {/* Full screen gradient background */}
-      <div className='fixed inset-0 -z-10 bg-gradient-to-br from-red-900 via-orange-900 to-red-900' />
+      <div className='fixed inset-0 -z-10 burn-bg' />
+      <SparkRain className='pointer-events-none' />
       {/* Fire animation anchored to bottom - always show */}
         <div className='fixed bottom-0 inset-x-0 h-56 pointer-events-none z-10'>
           <FireAnimation
@@ -222,7 +224,7 @@ export default function BurnPage() {
               <p className='text-gray-300'>
                 {t(
                   'common.fetchingCollection',
-                  'Fetching your CrazyCube collection'
+                  'Fetching your CrazyOctagon collection'
                 )}
               </p>
             </div>
@@ -237,7 +239,7 @@ export default function BurnPage() {
               <p className='text-gray-300'>
                 {t(
                   'burn.noNFTsDescription',
-                  "You don't have any CrazyCube NFTs to burn"
+                  "You don't have any CrazyOctagon NFTs to burn"
                 )}
               </p>
               <Link href='/' className='mt-4 inline-block'>
