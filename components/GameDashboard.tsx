@@ -13,7 +13,7 @@ import {
   Vault,
   TrendingUp,
 } from 'lucide-react';
-import { useCrazyCubeGame } from '@/hooks/useCrazyCubeGame';
+import { useCrazyOctagonGame } from '@/hooks/useCrazyOctagonGame';
 import { useGameStats } from '@/hooks/useGameStats';
 import { formatEther } from 'viem';
 import { formatWithCommas, formatSmart } from '@/utils/formatNumber';
@@ -77,7 +77,7 @@ const StatCard = ({
 };
 
 export const GameDashboard = () => {
-  const { craaBalance, breedCost, isConnected } = useCrazyCubeGame();
+  const { craaBalance, breedCost, isConnected } = useCrazyOctagonGame();
 
   const { stats: gameStats, isLoading: statsLoading } = useGameStats();
 
@@ -169,7 +169,7 @@ export const GameDashboard = () => {
           Game Statistics
         </h2>
         <p className='text-slate-400'>
-          Current state of the CrazyCube Ultimate game
+          Current state of the CrazyOctagon Ultimate game
         </p>
       </div>
 

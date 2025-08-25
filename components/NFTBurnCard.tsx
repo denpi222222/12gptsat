@@ -29,7 +29,7 @@ import {
   getNFTImage,
   getTokenIdAsDecimal,
 } from '@/hooks/useUserNFTs';
-import { useCrazyCubeGame, type NFTGameData } from '@/hooks/useCrazyCubeGame';
+import { useCrazyOctagonGame, type NFTGameData } from '@/hooks/useCrazyOctagonGame';
 import { useToast } from '@/hooks/use-toast';
 import { formatEther, parseEther } from 'viem';
 import { getColor, getLabel } from '@/lib/rarity';
@@ -60,7 +60,7 @@ export default function NFTBurnCard({
     getBurnSplit,
     pingInterval,
     breedCooldown,
-  } = useCrazyCubeGame();
+  } = useCrazyOctagonGame();
 
   const { toast } = useToast();
 
@@ -250,7 +250,7 @@ export default function NFTBurnCard({
               {getNFTImage(nft) ? (
                 <Image
                   src={getNFTImage(nft)}
-                  alt={`CrazyCube #${tokenIdDecimal}`}
+                  alt={`CrazyOctagon #${tokenIdDecimal}`}
                   width={160}
                   height={160}
                   className='w-full h-full object-cover'
@@ -307,7 +307,7 @@ export default function NFTBurnCard({
         <CardContent className='pt-0'>
           <div className='text-center mb-4'>
             <h3 className='font-semibold text-white text-lg mb-1'>
-              {nft.title || `CrazyCube #${tokenIdDecimal}`}
+              {nft.title || `CrazyOctagon #${tokenIdDecimal}`}
             </h3>
             <p className='text-sm text-gray-400'>Token ID: {tokenIdDecimal}</p>
             {gameData ? (

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useCrazyCubeGame } from '@/hooks/useCrazyCubeGame';
+import { useCrazyOctagonGame } from '@/hooks/useCrazyOctagonGame';
 import { useUserNFTs } from '@/hooks/useUserNFTs';
 
 export interface RewardInfo {
@@ -13,7 +13,7 @@ export interface RewardInfo {
 
 export function useRewardsData() {
   const { nfts, loading } = useUserNFTs();
-  const { getBurnRecord, claimBurnRewards } = useCrazyCubeGame();
+  const { getBurnRecord, claimBurnRewards } = useCrazyOctagonGame();
   const [rewards, setRewards] = useState<RewardInfo[]>([]);
   const [isLoading, setIsLoading] = useState(false);
 

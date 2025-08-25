@@ -24,7 +24,7 @@ export function ContractInfo({ nftCount, craaTotal }: Props) {
   const { t } = useTranslation();
   // addresses from chain config for single source of truth
   const GAME_ADDRESS = apeChain.contracts.gameProxy.address;
-  const NFT_ADDRESS = apeChain.contracts.crazyCubeNFT.address;
+  const NFT_ADDRESS = apeChain.contracts.CrazyOctagonNFT.address;
   const CRAA_ADDRESS = apeChain.contracts.crazyToken.address;
 
   // helper to copy address

@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import { createPublicClient, http } from 'viem';
 import { apeChain } from '@/config/chains';
 
-// CrazyCube game contract deployed on ApeChain mainnet
+// CrazyOctagon game contract deployed on ApeChain mainnet
 const GAME_ADDRESS = '0x7dFb75F1000039D650A4C2B8a068f53090e857dD' as const;
 
 // Minimal ABI fragments that we need

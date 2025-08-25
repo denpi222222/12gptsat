@@ -144,4 +144,4 @@ If you encounter issues:
 
 ---
 
-**🎉 Your CrazyCube NFT Game is now live on Netlify!** 
+**🎉 Your CrazyOctagon NFT Game is now live on Netlify!** 

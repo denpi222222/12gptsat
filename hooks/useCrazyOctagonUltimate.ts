@@ -39,7 +39,7 @@ const contractAbi = [
   },
 ] as const;
 
-export function useCrazyCubeUltimate() {
+export function useCrazyOctagonUltimate() {
   const { address: accountAddress, chainId } = useAccount();
   const isConnectedToCorrectChain = chainId === MAIN_CHAIN_ID;
 
@@ -91,7 +91,7 @@ export function useCrazyCubeUltimate() {
     if (!isConnectedToCorrectChain) {
       if (typeof window !== 'undefined')
         window.dispatchEvent(
-          new CustomEvent('crazycube:toast', {
+          new CustomEvent('crazyoctagon:toast', {
             detail: {
               title: 'Wrong Network',
               description: 'Please switch to ApeChain',
@@ -104,7 +104,7 @@ export function useCrazyCubeUltimate() {
     if (!writeContractAsync) {
       if (typeof window !== 'undefined')
         window.dispatchEvent(
-          new CustomEvent('crazycube:toast', {
+          new CustomEvent('crazyoctagon:toast', {
             detail: {
               title: 'Transaction unavailable',
               description: 'Write function is not available',
@@ -119,7 +119,7 @@ export function useCrazyCubeUltimate() {
     )) {
       if (typeof window !== 'undefined')
         window.dispatchEvent(
-          new CustomEvent('crazycube:toast', {
+          new CustomEvent('crazyoctagon:toast', {
             detail: {
               title: 'Contract blocked',
               description: 'Target contract is not in the allowlist',
@@ -141,7 +141,7 @@ export function useCrazyCubeUltimate() {
     } catch (err) {
       if (typeof window !== 'undefined')
         window.dispatchEvent(
-          new CustomEvent('crazycube:toast', {
+          new CustomEvent('crazyoctagon:toast', {
             detail: {
               title: 'Burn failed',
               description: (err as Error)?.message || 'Unknown error',
@@ -158,7 +158,7 @@ export function useCrazyCubeUltimate() {
     if (!isConnectedToCorrectChain) {
       if (typeof window !== 'undefined')
         window.dispatchEvent(
-          new CustomEvent('crazycube:toast', {
+          new CustomEvent('crazyoctagon:toast', {
             detail: {
               title: 'Wrong Network',
               description: 'Please switch to ApeChain',
@@ -171,7 +171,7 @@ export function useCrazyCubeUltimate() {
     if (!writeContractAsync) {
       if (typeof window !== 'undefined')
         window.dispatchEvent(
-          new CustomEvent('crazycube:toast', {
+          new CustomEvent('crazyoctagon:toast', {
             detail: {
               title: 'Transaction unavailable',
               description: 'Write function is not available',
@@ -186,7 +186,7 @@ export function useCrazyCubeUltimate() {
     )) {
       if (typeof window !== 'undefined')
         window.dispatchEvent(
-          new CustomEvent('crazycube:toast', {
+          new CustomEvent('crazyoctagon:toast', {
             detail: {
               title: 'Contract blocked',
               description: 'Target contract is not in the allowlist',
@@ -208,7 +208,7 @@ export function useCrazyCubeUltimate() {
     } catch (err) {
       if (typeof window !== 'undefined')
         window.dispatchEvent(
-          new CustomEvent('crazycube:toast', {
+          new CustomEvent('crazyoctagon:toast', {
             detail: {
               title: 'Activation failed',
               description: (err as Error)?.message || 'Unknown error',

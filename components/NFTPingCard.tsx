@@ -18,7 +18,7 @@ import {
   AlertCircle,
   ExternalLink,
 } from 'lucide-react';
-import { useCrazyCubeGame, type NFTGameData } from '@/hooks/useCrazyCubeGame';
+import { useCrazyOctagonGame, type NFTGameData } from '@/hooks/useCrazyOctagonGame';
 import { useToast } from '@/hooks/use-toast';
 import { createPublicClient, http } from 'viem';
 import { apeChain } from '@/config/chains';
@@ -68,7 +68,7 @@ function NFTPingCardComponent({
   const tokenIdDec = nft.tokenId.toString();
   // Removed isLiteMode - always show full effects
   const { getNFTGameData, pingNFT, isConnected, pingInterval } =
-    useCrazyCubeGame();
+    useCrazyOctagonGame();
   const { toast } = useToast();
   const [gameData, setGameData] = useState<NFTGameData | null>(null);
   const [loading, setLoading] = useState(true);
@@ -85,7 +85,7 @@ function NFTPingCardComponent({
     if (!isApeChain && isConnected) {
       toast({
         title: 'Wrong Network',
-        description: 'Please switch to ApeChain to interact with CrazyCube!',
+        description: 'Please switch to ApeChain to interact with CrazyOctagon!',
         variant: 'destructive',
       });
     }
@@ -422,7 +422,7 @@ function NFTPingCardComponent({
               {nft.image ? (
                 <Image
                   src={nft.image}
-                  alt={`CrazyCube #${tokenIdDec}`}
+                  alt={`CrazyOctagon #${tokenIdDec}`}
                   width={80}
                   height={80}
                   sizes='80px'

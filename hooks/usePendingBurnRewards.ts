@@ -43,7 +43,7 @@ export interface PendingReward {
   };
 }
 
-const CACHE_KEY = 'crazycube:pendingRewards';
+const CACHE_KEY = 'CrazyOctagon:pendingRewards';
 const CACHE_TTL_MS = 60 * 1000; // 1 minute
 
 export function usePendingBurnRewards() {
@@ -156,14 +156,14 @@ export function usePendingBurnRewards() {
             if (r.ok) {
               const m = await r.json();
               item.name =
-                m.rawMetadata?.name || m.title || `CrazyCube #${item.tokenId}`;
+                m.rawMetadata?.name || m.title || `CrazyOctagon #${item.tokenId}`;
             } else {
-              item.name = `CrazyCube #${item.tokenId}`;
+              item.name = `CrazyOctagon #${item.tokenId}`;
             }
           }
         } catch {
           // If metadata fails, provide a fallback name.
-          item.name = `CrazyCube #${item.tokenId}`;
+          item.name = `CrazyOctagon #${item.tokenId}`;
         }
         // As per your request, force all images to load from the local public folder.
         // This is the fix for the images.

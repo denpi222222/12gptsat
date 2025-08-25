@@ -59,7 +59,7 @@ const NETWORKS = {
     icon: '🦍',
     tokens: {
       craa: 'CRAA',
-      nft: 'CrazyCube NFT',
+      nft: 'CrazyOctagon NFT',
     },
   },
   solana: {
@@ -69,7 +69,7 @@ const NETWORKS = {
     icon: '◎',
     tokens: {
       craa: 'SOL-CRAA',
-      nft: 'SOL-CrazyCube NFT',
+      nft: 'SOL-CrazyOctagon NFT',
     },
   },
 } as const;
@@ -213,7 +213,7 @@ const ComingSoonBanner = () => (
       <Sparkles className='w-4 h-4 md:w-5 md:h-5 text-pink-400' />
     </div>
     <p className='text-white/80 text-center mt-3 text-xs md:text-sm max-w-2xl mx-auto px-4'>
-      Bridge your CRAA tokens and CrazyCube NFTs seamlessly between ApeChain and
+      Bridge your CRAA tokens and CrazyOctagon NFTs seamlessly between ApeChain and
       Solana networks. Experience true cross-chain interoperability with minimal
       fees and fast transactions.
     </p>
@@ -245,7 +245,7 @@ export default function BridgePage() {
   // Avoid hydration mismatch before mount
   if (!mounted) {
     return (
-      <div className='min-h-screen bg-gradient-to-br from-gray-900 via-purple-900/20 to-gray-900 flex items-center justify-center'>
+      <div className='min-h-screen bridge-bg flex items-center justify-center'>
         <div className='text-white'>{t('common.loading', 'Loading...')}</div>
       </div>
     );
@@ -311,7 +311,7 @@ export default function BridgePage() {
 
   return (
     <div
-      className='min-h-screen mobile-content-wrapper bg-gradient-to-br from-gray-900 via-purple-900/20 to-gray-900 p-4'
+      className='min-h-screen mobile-content-wrapper bridge-bg p-4'
     >
       {/* Bridge animation background - always show */}
       <div className='fixed inset-0 pointer-events-none z-0'>
@@ -349,7 +349,7 @@ export default function BridgePage() {
           <p className='text-center text-purple-300 mt-1 mb-2 text-sm md:text-base px-4'>
             {t(
               'bridge.description',
-              'Seamlessly transfer your CRAA tokens and CrazyCube NFTs between ApeChain and Solana'
+              'Seamlessly transfer your CRAA tokens and CrazyOctagon NFTs between ApeChain and Solana'
             )}
           </p>
 
@@ -415,7 +415,7 @@ export default function BridgePage() {
             <div className='text-center py-8'>
               <div className='inline-flex items-center justify-center w-16 h-16 bg-purple-500/20 rounded-full mb-4'>
                 <ArrowRightLeft
-                  className={`h-8 w-8 ${mounted ? 'text-purple-500' : 'text-gray-500'}`}
+                  className={`h-8 w-8 ${mounted ? 'text-purple-500' : 'text-gray-500'} arrow-anim`}
                 />
               </div>
               <h3 className='text-xl font-semibold text-white mb-2'>
@@ -429,7 +429,7 @@ export default function BridgePage() {
               </p>
               <Button
                 onClick={handleConnectWallet}
-                className='bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500'
+                className='btn-monad'
               >
                 {t('wallet.connect', 'Connect Wallet')}
               </Button>
@@ -474,7 +474,7 @@ export default function BridgePage() {
                       }`}
                     >
                       <ImageIcon className='w-4 h-4 mr-2' />
-                      CrazyCube NFTs
+                      CrazyOctagon NFTs
                     </Button>
                   </div>
                 </CardContent>
@@ -497,7 +497,7 @@ export default function BridgePage() {
                     onClick={swapNetworks}
                     className='w-12 h-12 rounded-full border-purple-500/50 text-purple-400 hover:bg-purple-500/10 hover:border-purple-400 mobile-safe-button'
                   >
-                    <ArrowRightLeft className='w-5 h-5' />
+                    <ArrowRightLeft className='w-5 h-5 arrow-anim' />
                   </Button>
                 </div>
 
@@ -576,19 +576,19 @@ export default function BridgePage() {
                           <SelectValue
                             placeholder={t(
                               'bridge.interface.selectNftPlaceholder',
-                              'Choose your CrazyCube NFT'
+                              'Choose your CrazyOctagon NFT'
                             )}
                           />
                         </SelectTrigger>
                         <SelectContent className='bg-gray-800 border-purple-500/30 mobile-safe-button'>
                           <SelectItem value='cube-1'>
-                            CrazyCube #1234
+                            CrazyOctagon #1234
                           </SelectItem>
                           <SelectItem value='cube-2'>
-                            CrazyCube #5678
+                            CrazyOctagon #5678
                           </SelectItem>
                           <SelectItem value='cube-3'>
-                            CrazyCube #9012
+                            CrazyOctagon #9012
                           </SelectItem>
                         </SelectContent>
                       </Select>
@@ -728,7 +728,7 @@ export default function BridgePage() {
                       </li>
                       <li className='flex items-center space-x-2'>
                         <ArrowRight className='w-4 h-4 flex-shrink-0' />
-                        <span>Transfer CrazyCube NFTs across networks</span>
+                        <span>Transfer CrazyOctagon NFTs across networks</span>
                       </li>
                       <li className='flex items-center space-x-2'>
                         <ArrowRight className='w-4 h-4 flex-shrink-0' />

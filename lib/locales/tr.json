@@ -9,7 +9,7 @@
   "sections": {
     "bridge": {
       "title": "Köprü (Küpü Geri Getir!)",
-      "description": "CRAA tokenlarınızı ve CrazyCube NFT'lerinizi ApeChain ve Solana arasında transfer edin. Hızlı, güvenli ve minimum ücretlerle. Gerçek koleksiyoncular için cross-chain!",
+      "description": "CRAA tokenlarınızı ve CrazyOctagon NFT'lerinizi ApeChain ve Solana arasında transfer edin. Hızlı, güvenli ve minimum ücretlerle. Gerçek koleksiyoncular için cross-chain!",
       "button": "NFT Köprüsü",
       "guide": {
         "title": "🪄 Diriltme Rehberi",
@@ -172,9 +172,9 @@
       "connectWalletButton": "Cüzdan Bağla",
       "errorLoadingNfts": "NFT Yükleme Hatası",
       "loadingNfts": "NFT'ler Yükleniyor...",
-      "loadingNftsDesc": "CrazyCube koleksiyonunuz alınıyor",
+      "loadingNftsDesc": "CrazyOctagon koleksiyonunuz alınıyor",
       "noNftsFound": "NFT Bulunamadı",
-      "noNftsFoundDesc": "Çiftleştirmek için CrazyCube NFT'niz yok",
+      "noNftsFoundDesc": "Çiftleştirmek için CrazyOctagon NFT'niz yok",
       "goToCollection": "Koleksiyona Git",
       "selectNftsForBreeding": "Çiftleştirme için 2 NFT Seçin",
       "loadingGraveyardStatus": "Mezarlık durumu yükleniyor...",
@@ -272,13 +272,13 @@
     "balance": "Bakiye",
     "instruction": "Talimat",
 "nftInspectorButton": "NFT İnceleyici'ye Git",
-    "gameGuide": "CrazyCube Oyun Rehberi",
+    "gameGuide": "CrazyOctagon Oyun Rehberi",
     "gameGuideContent": {
-      "title": "🎮 CrazyCube Oyun Rehberi",
+      "title": "🎮 CrazyOctagon Oyun Rehberi",
       "gettingStarted": {
         "title": "🔹 Başlangıç",
         "getCRAA": "• CRAA token edinin — gas ücretleri ve oyun aksiyonları için",
-        "buyNFTs": "• Pazarda CrazyCube NFT satın alın"
+        "buyNFTs": "• Pazarda CrazyOctagon NFT satın alın"
       },
       "howToStart": {
         "title": "🔹 Oynamaya Nasıl Başlanır",
@@ -360,7 +360,7 @@
         "decentralized": "Yakında oyunumuz pazar öz-düzenlemesi ile %100 merkezi olmayan olacak."
       }
     },
-    "gameGuideContent": "🎮 CrazyCube Oyun Rehberi\n\n🔹 Başlangıç\n• CRAA token'larını alın — gaz ücretleri ve oyun eylemleri için\n• Marketplace'te CrazyCube NFT'lerini satın alın\n• Satın almadan önce NFT'yi \\\"Bilgi\\\" → \\\"NFT İnceleyici\\\" bölümünde kontrol edin — NFT numarasını girin ve tam bilgi alın: kilitli coin miktarı, kalan yıldızlar, bekleme süresi durumu ve diğer parametreler\n\n🔹 Nasıl Oynamaya Başlanır\n• Ping sekmesine gidin — NFT'lerinizi göreceksiniz\n• Yeni küp için Aktifleştir'e basın — bu ilk Ping'dir, CRAA vermez ama zamanlayıcıyı başlatır\n• Aktifleştirmeden sonra ping yapabilirsiniz (Ping'e basın). Varsayılan olarak 24 saatte bir, ödüller birikmeye başlar\n• Her başarılı Ping CRAA getirir — miktar şunlara bağlıdır:\n  - Küp nadirliği (Common, Rare, Mystic, vb.)\n  - Deneyim bonusunuz — 24 saatte bir, ping kaçırmadan büyür\n  - Ping'ler arasındaki süre (daha fazla dönem geçtiyse, daha fazla CRAA)\n\n🔹 Deneyim Bonusu Nedir\n• Başlangıçta tüm küpler -18.9% cezaya sahiptir\n• 24 saatte bir ping yaptığınızda bonus alırsınız — +2.7%\n• Ulaşabileceğiniz maksimum +97.2% + nadirlik bonusları da sayılır\n• Ping'leri kaçırırsanız — bonus artmayacak\n• Ping'leri kaçırırsanız — bonus -18.9%'e sıfırlanır\n\n🔹 CRAA Nasıl Alınır\n• CRAA hemen cüzdana düşmez, küp içinde birikir (böylece her NFT gerçek değere sahiptir)\n• Toplamak için — küpü yakmanız gerekir (Yak) (küpünüz mezarlık bölümüne gider ve artık size ait değildir, claim bölümünde CRAA coin'leri alırsınız)\n\n🔹 Nasıl Yakılır\n• Yak bölümüne gidin\n• Küp ve bekleme süresini seçin:\n  - 12 dakika → %50 oyuncuya\n  - 60 dakika → %70\n  - 255 dakika → %80\n• Geri kalanı havuz ve kalıcı yakma arasında bölünür (resmi ölü cüzdana gider)\n• Seçilen süreden sonra gidin ve Talep Et'e basın — CRAA cüzdanınıza gelecek\n\n🔹 Küp Nasıl Canlandırılır (Üretim)\n• Üretim bölümüne gidin\n• 2 canlı küp seçin (yıldızları olan ve bekleme süresinde olmayan)\n• CRAA ödeyin (marketplace minimum fiyatının %10'u, sürekli güncellenir)\n• Mezarlıktan rastgele bir NFT yeni olarak size geri dönecek, tüm yıldızlarla ama coin'siz:\n  - Bonus sıfırlanır (geri -18.9%'e)\n  - Yıldızlar geri yüklenir\n  - Sıfırdan tekrar ping yapabilirsiniz\n\n🔹 Sistemde CRAA Nerede\n• Ping için CRAA aylık ödül havuzundan gelir\n• Üretimde harcanan CRAA bu havuza geri döner\n• Yakma'dan CRAA sonsuza kadar yanar\n• Yakılan her şey özel cüzdan 0x...dead'e gider ve sonsuza kadar kaybolur\n\n🔹 CRAA Token Ücretleri\n• Transferlerde %3 ücret — oyun sözleşmesine gider\n• DEX satışlarında %10 ücret — oyun sözleşmesine gider\n• DEX alımlarında %0 ücret — alırken ücret yok\n• Tüm ücretler oyun ekosistemini ve ödül havuzunu destekler\n\n🔹 Örnek Strateji\nÜç küpünüz var:\n• Common (normal) — ping yapın, bonus 24 saatte bir %2.7 büyür, %97'ye kadar, sonra durur. Satabilir, NFT transfer edebilirsiniz, bonus korunur ve NFT'deki kilitli coin'ler de korunur\n• Rare — Üretim için kullanın veya CRAA biriktirin\n• Mystic — nadir, daha fazla CRAA getirir, yakmamak daha iyi\n\nSakin oynayın:\n• 24 saatte bir giriş yapın ve Ping'e basın\n• Periyodik olarak zayıf küpleri yakın → token alın\n• Veya ölüleri canlandırın — daha nadir olan için şans alın\n\n💡 İpuçları\nMaksimum kar istiyorsanız — düzenli ping yapın ve nadir küpleri çok erken yakmayın.\n💥 Yakılan tokenlar geri gelmeyecek — bu kalan CRAA'nın değerini artırır.\n\n🚀 Vizyonumuz\n1-2 ay içindeki planlarımız oyun oynanışını ayarlamak ve NFT ve token sözleşmelerindeki yönetici haklarından vazgeçmektir. Sosyal bir deney yapmak ve hiçbir şeyi değiştirme imkanı olmayan tamamen sosyal oyun oynanışı yaratmak istiyoruz — sadece pazar ve insanlar karar verir.\n\nEkibin sözleşmede CRAA coin şeklinde bonusu yok. Bir cüzdan oluşturabilirsiniz, örneğin Rabby cüzdanında 1 dakikada oluşturun ve oyunumuzu oynayın.\n\nYakında oyunumuz %100 merkezi olmayan pazar öz düzenlemesi ile olacak. Ayrıca planlarda CRAA token'ları Solana blockchain'ine aktarılabilecek ve ticareti yapılabilecek, bu coin'i özellikle değerli yapacak, ayrıca NFT'ler de Solana blockchain'ine aktarılabilecek ve bildiğiniz gibi Solana blockchain'inde hem coin hem de NFT'lerde büyük işlemler var."
+    "gameGuideContent": "🎮 CrazyOctagon Oyun Rehberi\n\n🔹 Başlangıç\n• CRAA token'larını alın — gaz ücretleri ve oyun eylemleri için\n• Marketplace'te CrazyOctagon NFT'lerini satın alın\n• Satın almadan önce NFT'yi \\\"Bilgi\\\" → \\\"NFT İnceleyici\\\" bölümünde kontrol edin — NFT numarasını girin ve tam bilgi alın: kilitli coin miktarı, kalan yıldızlar, bekleme süresi durumu ve diğer parametreler\n\n🔹 Nasıl Oynamaya Başlanır\n• Ping sekmesine gidin — NFT'lerinizi göreceksiniz\n• Yeni küp için Aktifleştir'e basın — bu ilk Ping'dir, CRAA vermez ama zamanlayıcıyı başlatır\n• Aktifleştirmeden sonra ping yapabilirsiniz (Ping'e basın). Varsayılan olarak 24 saatte bir, ödüller birikmeye başlar\n• Her başarılı Ping CRAA getirir — miktar şunlara bağlıdır:\n  - Küp nadirliği (Common, Rare, Mystic, vb.)\n  - Deneyim bonusunuz — 24 saatte bir, ping kaçırmadan büyür\n  - Ping'ler arasındaki süre (daha fazla dönem geçtiyse, daha fazla CRAA)\n\n🔹 Deneyim Bonusu Nedir\n• Başlangıçta tüm küpler -18.9% cezaya sahiptir\n• 24 saatte bir ping yaptığınızda bonus alırsınız — +2.7%\n• Ulaşabileceğiniz maksimum +97.2% + nadirlik bonusları da sayılır\n• Ping'leri kaçırırsanız — bonus artmayacak\n• Ping'leri kaçırırsanız — bonus -18.9%'e sıfırlanır\n\n🔹 CRAA Nasıl Alınır\n• CRAA hemen cüzdana düşmez, küp içinde birikir (böylece her NFT gerçek değere sahiptir)\n• Toplamak için — küpü yakmanız gerekir (Yak) (küpünüz mezarlık bölümüne gider ve artık size ait değildir, claim bölümünde CRAA coin'leri alırsınız)\n\n🔹 Nasıl Yakılır\n• Yak bölümüne gidin\n• Küp ve bekleme süresini seçin:\n  - 12 dakika → %50 oyuncuya\n  - 60 dakika → %70\n  - 255 dakika → %80\n• Geri kalanı havuz ve kalıcı yakma arasında bölünür (resmi ölü cüzdana gider)\n• Seçilen süreden sonra gidin ve Talep Et'e basın — CRAA cüzdanınıza gelecek\n\n🔹 Küp Nasıl Canlandırılır (Üretim)\n• Üretim bölümüne gidin\n• 2 canlı küp seçin (yıldızları olan ve bekleme süresinde olmayan)\n• CRAA ödeyin (marketplace minimum fiyatının %10'u, sürekli güncellenir)\n• Mezarlıktan rastgele bir NFT yeni olarak size geri dönecek, tüm yıldızlarla ama coin'siz:\n  - Bonus sıfırlanır (geri -18.9%'e)\n  - Yıldızlar geri yüklenir\n  - Sıfırdan tekrar ping yapabilirsiniz\n\n🔹 Sistemde CRAA Nerede\n• Ping için CRAA aylık ödül havuzundan gelir\n• Üretimde harcanan CRAA bu havuza geri döner\n• Yakma'dan CRAA sonsuza kadar yanar\n• Yakılan her şey özel cüzdan 0x...dead'e gider ve sonsuza kadar kaybolur\n\n🔹 CRAA Token Ücretleri\n• Transferlerde %3 ücret — oyun sözleşmesine gider\n• DEX satışlarında %10 ücret — oyun sözleşmesine gider\n• DEX alımlarında %0 ücret — alırken ücret yok\n• Tüm ücretler oyun ekosistemini ve ödül havuzunu destekler\n\n🔹 Örnek Strateji\nÜç küpünüz var:\n• Common (normal) — ping yapın, bonus 24 saatte bir %2.7 büyür, %97'ye kadar, sonra durur. Satabilir, NFT transfer edebilirsiniz, bonus korunur ve NFT'deki kilitli coin'ler de korunur\n• Rare — Üretim için kullanın veya CRAA biriktirin\n• Mystic — nadir, daha fazla CRAA getirir, yakmamak daha iyi\n\nSakin oynayın:\n• 24 saatte bir giriş yapın ve Ping'e basın\n• Periyodik olarak zayıf küpleri yakın → token alın\n• Veya ölüleri canlandırın — daha nadir olan için şans alın\n\n💡 İpuçları\nMaksimum kar istiyorsanız — düzenli ping yapın ve nadir küpleri çok erken yakmayın.\n💥 Yakılan tokenlar geri gelmeyecek — bu kalan CRAA'nın değerini artırır.\n\n🚀 Vizyonumuz\n1-2 ay içindeki planlarımız oyun oynanışını ayarlamak ve NFT ve token sözleşmelerindeki yönetici haklarından vazgeçmektir. Sosyal bir deney yapmak ve hiçbir şeyi değiştirme imkanı olmayan tamamen sosyal oyun oynanışı yaratmak istiyoruz — sadece pazar ve insanlar karar verir.\n\nEkibin sözleşmede CRAA coin şeklinde bonusu yok. Bir cüzdan oluşturabilirsiniz, örneğin Rabby cüzdanında 1 dakikada oluşturun ve oyunumuzu oynayın.\n\nYakında oyunumuz %100 merkezi olmayan pazar öz düzenlemesi ile olacak. Ayrıca planlarda CRAA token'ları Solana blockchain'ine aktarılabilecek ve ticareti yapılabilecek, bu coin'i özellikle değerli yapacak, ayrıca NFT'ler de Solana blockchain'ine aktarılabilecek ve bildiğiniz gibi Solana blockchain'inde hem coin hem de NFT'lerde büyük işlemler var."
   },
   "tabs": {
     "breed": "Çiftleştir",
@@ -821,7 +821,7 @@
   },
   "bridge": {
     "title": "Çapraz Zincir Köprüsü 🌉",
-    "description": "CRAA token'larınızı ve CrazyCube NFT'lerinizi ApeChain ve Solana arasında sorunsuz bir şekilde aktarın",
+    "description": "CRAA token'larınızı ve CrazyOctagon NFT'lerinizi ApeChain ve Solana arasında sorunsuz bir şekilde aktarın",
     "connectWallet": "Cüzdanınızı Bağlayın",
     "connectWalletDesc": "Çapraz zincir köprüsüne erişmek için lütfen cüzdanınızı bağlayın",
     "guide": {
@@ -840,7 +840,7 @@
       "available": "Mevcut: 1,234.56 CRAA",
       "useMax": "Maksimum Kullan",
       "selectNftLabel": "Köprülemek için NFT Seçin",
-      "selectNftPlaceholder": "CrazyCube NFT'nizi seçin",
+      "selectNftPlaceholder": "CrazyOctagon NFT'nizi seçin",
       "bridgeButton": "{type} Köprüsü",
       "bridgeAgain": "Tekrar Köprüle",
       "preparing": "Hazırlanıyor...",
@@ -888,7 +888,7 @@
       "title": "🚀 Yakında Gelecek Özellikler",
       "features": [
         "ApeChain ve Solana arasında CRAA token'larını köprüleyin",
-        "Ağlar arası CrazyCube NFT aktarımı",
+        "Ağlar arası CrazyOctagon NFT aktarımı",
         "NFT meta verilerini ve nadirliğini koruyun",
         "Düşük maliyetli çapraz zincir işlemleri",
         "Gerçek zamanlı köprü durumu takibi",

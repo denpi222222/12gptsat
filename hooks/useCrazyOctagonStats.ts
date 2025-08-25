@@ -18,7 +18,7 @@ const DEAD = '0x000000000000000000000000000000000000dEaD' as `0x${string}`;
 
 // Updated ABI based on actual game contract
 const GAME_ABI = [
-  // From useCrazyCubeGame hook - functions that actually exist
+  // From useCrazyOctagonGame hook - functions that actually exist
   {
     inputs: [],
     name: 'totalBurned',
@@ -114,7 +114,7 @@ export interface GlobalStats {
   randomSource: number;
 }
 
-export const useCrazyCubeStats = () => {
+export const useCrazyOctagonStats = () => {
   const publicClient = usePublicClient();
   const [stats, setStats] = useState<GlobalStats | null>(null);
   const [loading, setLoading] = useState(false);

@@ -1,4 +1,4 @@
-// AI-Powered Security System for CrazyCube
+// AI-Powered Security System for CrazyOctagon
 // Real-time threat detection and prevention
 
 interface SecurityEvent {

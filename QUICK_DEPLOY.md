@@ -4,15 +4,15 @@
 
 ### 1. Загрузите на GitHub:
 ```bash
-# Создайте репозиторий на GitHub: crazycube-ultimate-game
-git remote add origin https://github.com/denpi222222/crazycube-ultimate-game.git
+# Создайте репозиторий на GitHub: CrazyOctagon-ultimate-game
+git remote add origin https://github.com/denpi222222/CrazyOctagon-ultimate-game.git
 git branch -M main
 git push -u origin main
 ```
 
 ### 2. Подключите к Netlify:
 - Перейдите на https://netlify.com
-- "New site from Git" → GitHub → crazycube-ultimate-game
+- "New site from Git" → GitHub → CrazyOctagon-ultimate-game
 - Build command: `npm run build`
 - Publish directory: `.next`
 

@@ -382,7 +382,7 @@ export default function Denis3LiveData() {
       {/* Data Source Info */}
       <div className='text-center'>
         <p className='text-slate-400 text-sm'>
-          Data pulled directly from CrazyCubeUltimate3_Safe on ApeChain •
+          Data pulled directly from CrazyOctagonUltimate3_Safe on ApeChain •
           Updates every 2 minutes
         </p>
       </div>

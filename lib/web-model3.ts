@@ -2,7 +2,7 @@
 
 // ID for web-model3 - now taken from environment variables
 export const WEB_MODEL3_ID =
-  process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || 'crazycube-project-id';
+  process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || 'CrazyOctagon-project-id';
 
 // Simple function to get model data
 export async function getWebModel3Data() {
@@ -31,7 +31,7 @@ export const webModel3Utils = {
   },
 
   isConfigured: (): boolean => {
-    const projectId = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || 'crazycube-project-id';
+    const projectId = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || 'CrazyOctagon-project-id';
     return projectId ? projectId.length > 0 : false;
   },
 };

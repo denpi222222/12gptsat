@@ -209,7 +209,7 @@ export interface GameStats {
  *
  * This hook replaces the following deprecated hooks:
  * - useNFTStats
- * - useCrazyCubeStats
+ * - useCrazyOctagonStats
  * - useCRAATokenStat
  * - Individual contract stat hooks
  *

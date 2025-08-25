@@ -16,7 +16,7 @@ export function useClaimableLedgerRewards(refreshIntervalMs = 60000) {
   const [error, setError] = useState<string | null>(null);
   const timer = useRef<NodeJS.Timeout>();
 
-  const CACHE_KEY = address ? `crazycube:claimable:${address}` : undefined;
+  const CACHE_KEY = address ? `CrazyOctagon:claimable:${address}` : undefined;
   const CACHE_TTL = 2 * 60 * 1000; // 2 minutes
 
   const fetchOnce = useCallback(async () => {

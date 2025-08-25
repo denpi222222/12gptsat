@@ -14,20 +14,20 @@
 
 #### 1. Создайте репозиторий на GitHub:
 ```
-Название: crazycube-ultimate-game
+Название: CrazyOctagon-ultimate-game
 Описание: Complete Web3 NFT Game with Security Features
 ```
 
 #### 2. Загрузите код:
 ```bash
-git remote add origin https://github.com/denpi222222/crazycube-ultimate-game.git
+git remote add origin https://github.com/denpi222222/CrazyOctagon-ultimate-game.git
 git branch -M main
 git push -u origin main
 ```
 
 #### 3. Подключите к Netlify:
 - https://netlify.com → "New site from Git"
-- Выберите GitHub → crazycube-ultimate-game
+- Выберите GitHub → CrazyOctagon-ultimate-game
 - Build: `npm run build`
 - Publish: `.next`
 

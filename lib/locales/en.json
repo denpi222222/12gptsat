@@ -1,6 +1,6 @@
 {
   "home": {
-    "title": "CrazyCube",
+    "title": "CrazyOctagon",
     "subtitle": "Where cubes cry and joke!",
     "balance": "Balance:",
     "connectWallet": "Connect MetaMask",
@@ -13,7 +13,7 @@
   "common": {
     "loading": "Loading...",
     "loadingNFTs": "Loading NFTs...",
-    "fetchingCollection": "Fetching your CrazyCube collection",
+    "fetchingCollection": "Fetching your CrazyOctagon collection",
     "noNFTsFound": "No NFTs Found",
     "goToCollection": "Go to Collection",
     "retry": "Retry"
@@ -35,7 +35,7 @@
   },
   "burn": {
     "description": "Burn the cube — get CRAA. Easy money! 💰",
-    "noNFTsDescription": "You don't have any CrazyCube NFTs to burn"
+    "noNFTsDescription": "You don't have any CrazyOctagon NFTs to burn"
   },
 
   "info": {
@@ -53,7 +53,7 @@
   "sections": {
     "bridge": {
       "title": "Bridge (Bring Back Cube!)",
-      "description": "Transfer your CRAA tokens and CrazyCube NFTs between ApeChain and Solana. Fast, secure, and with minimal fees. Cross-chain for true collectors!",
+      "description": "Transfer your CRAA tokens and CrazyOctagon NFTs between ApeChain and Solana. Fast, secure, and with minimal fees. Cross-chain for true collectors!",
       "button": "Bridge NFT",
       "guide": {
         "title": "🪄 Resurrection Guide",
@@ -142,7 +142,7 @@
       "title": "Ping NFTs",
       "description": "Ping your NFTs every 24 hours to earn CRAA tokens! Your bonus grows with consistent pinging.",
       "connectWallet": "Connect wallet to view your cubes",
-      "noNFTs": "No CrazyCube NFTs found.",
+      "noNFTs": "No CrazyOctagon NFTs found.",
       "sentFor": "Ping sent for",
       "error": "Ping error",
       "interval": "Ping Interval: 24 hours",
@@ -214,9 +214,9 @@
       "connectWalletButton": "Connect Wallet",
       "errorLoadingNfts": "Error Loading NFTs",
       "loadingNfts": "Loading NFTs...",
-      "loadingNftsDesc": "Fetching your CrazyCube collection",
+      "loadingNftsDesc": "Fetching your CrazyOctagon collection",
       "noNftsFound": "No NFTs Found",
-      "noNftsFoundDesc": "You don't have any CrazyCube NFTs to breed",
+      "noNftsFoundDesc": "You don't have any CrazyOctagon NFTs to breed",
       "goToCollection": "Go to Collection",
       "selectNftsForBreeding": "Select 2 NFTs for Breeding",
       "loadingGraveyardStatus": "Loading graveyard status...",
@@ -266,7 +266,7 @@
     }
   },
   "footer": {
-    "copyright": "© 2025 CrazyCube — Where cubes cry and joke!",
+    "copyright": "© 2025 CrazyOctagon — Where cubes cry and joke!",
     "crashMessage": "If the site crashed, the cube went for pizza"
   },
   "construction": {
@@ -296,13 +296,13 @@
     "connected": "Connected",
     "instruction": "Instruction",
 "nftInspectorButton": "Go to NFT Inspector",
-    "gameGuide": "CrazyCube Game Guide",
+    "gameGuide": "CrazyOctagon Game Guide",
     "gameGuideContent": {
-      "title": "🎮 CrazyCube Game Guide",
+      "title": "🎮 CrazyOctagon Game Guide",
       "gettingStarted": {
         "title": "🔹 Getting Started",
         "getCRAA": "• Get CRAA tokens — for gas fees and game actions",
-        "buyNFTs": "• Buy CrazyCube NFTs on the marketplace"
+        "buyNFTs": "• Buy CrazyOctagon NFTs on the marketplace"
       },
       "howToStart": {
         "title": "🔹 How to Start Playing",
@@ -384,7 +384,7 @@
         "decentralized": "Soon our game will be 100% decentralized with market self-regulation. Also in plans CRAA tokens will be able to be transferred to Solana blockchain and traded, this will make the coin especially valuable, also NFTs will also be able to be transferred to Solana blockchain, and as you know on Solana blockchain there are huge trades both coins and NFTs."
       }
     },
-    "gameGuideContent": "🎮 CrazyCube Game Guide\n\n🔹 Getting Started\n• Get CRAA tokens — for gas fees and game actions\n• Buy CrazyCube NFTs on the marketplace\n• Before buying, check the NFT in the \\\"Information\\\" → \\\"NFT Inspector\\\" section — enter the NFT number and get complete information: amount of locked coins, remaining stars, cooldown status and other parameters\n\n🔹 How to Start Playing\n• Go to the Ping tab — you'll see your NFTs\n• For a new cube, press Activate — this is the first Ping, it doesn't give CRAA but starts the timer\n• After activation, you can ping (click Ping). Default is once every 24 hours, rewards start accumulating\n• Each successful Ping brings CRAA — amount depends on:\n  - Cube rarity (Common, Rare, Mystic, etc.)\n  - Your experience bonus — grows every 24 hours without missing pings\n  - Time between pings (if more periods passed, more CRAA)\n\n🔹 What is Experience Bonus\n• Initially all cubes have -18.9% penalty\n• Every 24 hours when you ping you get bonus — +2.7%\n• Maximum you can reach +97.2% + rarity bonuses also count\n• If you miss pings — bonus won't increase\n• If you miss pings — bonus resets to -18.9%\n\n🔹 How to Get CRAA\n• CRAA doesn't drop to wallet immediately, but accumulates inside the cube (this way each NFT has real value)\n• To collect — you need to burn the cube (Burn) (your cube goes to graveyard section and no longer belongs to you, you get CRAA coins in the claim section)\n\n🔹 How to Burn\n• Go to Burn section\n• Choose cube and waiting time:\n  - 12 minutes → 50% to player\n  - 60 minutes → 70%\n  - 255 minutes → 80%\n• The rest is split between pool and permanent burning (goes to official dead wallet)\n• After chosen time, go and press Claim — CRAA will come to your wallet\n\n🔹 How to Revive Cube (Breed)\n• Go to Breed section\n• Choose 2 living cubes (that have stars and are not in cooldown)\n• Pay CRAA (10% of minimum marketplace price, constantly updated)\n• Random NFT from graveyard will return to you as new, with all stars but no coins:\n  - Bonus is reset (back to -18.9%)\n  - Stars are restored\n  - Can ping again from scratch\n\n🔹 Where CRAA is in the System\n• CRAA for Ping comes from monthly reward pool\n• CRAA spent on Breed returns to this pool\n• CRAA from Burn burns forever\n• Everything burned goes to special wallet 0x...dead and disappears forever\n\n🔹 CRAA Token Fees\n• 3% fee on transfers — goes to game contract\n• 10% fee on DEX sales — goes to game contract\n• 0% fee on DEX purchases — no fee when buying\n• All fees support the game ecosystem and reward pool\n\n🔹 Example Strategy\nYou have three cubes:\n• Common (regular) — ping it, bonus grows by 2.7% every 24 hours up to 97%, then stops. Can sell, transfer NFT, bonus is preserved and locked coins in NFT are also preserved\n• Rare — use for Breed or accumulate CRAA\n• Mystic — rare, brings more CRAA, better not to burn\n\nPlay calmly:\n• Once every 24 hours log in and press Ping\n• Periodically burn weak cubes → get tokens\n• Or revive dead ones — get chance for rarer one\n\n💡 Tips\nWant maximum profit — ping regularly and don't burn rare cubes too early.\n💥 Burned tokens won't return — this increases the value of remaining CRAA.\n\n🚀 Our Vision\nOur plans within 1-2 months are to adjust the gameplay and renounce admin rights on NFT and token contracts. We want to conduct a social experiment and create fully social gameplay where there are no possibilities to change anything — only market and people decide.\n\nThe team has no bonuses in the contract in the form of CRAA coins. You can create a wallet, for example, in Rabby wallet in 1 minute and play our game.\n\nSoon our game will be 100% decentralized with market self-regulation. Also in plans CRAA tokens will be able to be transferred to Solana blockchain and traded, this will make the coin especially valuable, also NFTs will also be able to be transferred to Solana blockchain, and as you know on Solana blockchain there are huge trades both coins and NFTs."
+    "gameGuideContent": "🎮 CrazyOctagon Game Guide\n\n🔹 Getting Started\n• Get CRAA tokens — for gas fees and game actions\n• Buy CrazyOctagon NFTs on the marketplace\n• Before buying, check the NFT in the \\\"Information\\\" → \\\"NFT Inspector\\\" section — enter the NFT number and get complete information: amount of locked coins, remaining stars, cooldown status and other parameters\n\n🔹 How to Start Playing\n• Go to the Ping tab — you'll see your NFTs\n• For a new cube, press Activate — this is the first Ping, it doesn't give CRAA but starts the timer\n• After activation, you can ping (click Ping). Default is once every 24 hours, rewards start accumulating\n• Each successful Ping brings CRAA — amount depends on:\n  - Cube rarity (Common, Rare, Mystic, etc.)\n  - Your experience bonus — grows every 24 hours without missing pings\n  - Time between pings (if more periods passed, more CRAA)\n\n🔹 What is Experience Bonus\n• Initially all cubes have -18.9% penalty\n• Every 24 hours when you ping you get bonus — +2.7%\n• Maximum you can reach +97.2% + rarity bonuses also count\n• If you miss pings — bonus won't increase\n• If you miss pings — bonus resets to -18.9%\n\n🔹 How to Get CRAA\n• CRAA doesn't drop to wallet immediately, but accumulates inside the cube (this way each NFT has real value)\n• To collect — you need to burn the cube (Burn) (your cube goes to graveyard section and no longer belongs to you, you get CRAA coins in the claim section)\n\n🔹 How to Burn\n• Go to Burn section\n• Choose cube and waiting time:\n  - 12 minutes → 50% to player\n  - 60 minutes → 70%\n  - 255 minutes → 80%\n• The rest is split between pool and permanent burning (goes to official dead wallet)\n• After chosen time, go and press Claim — CRAA will come to your wallet\n\n🔹 How to Revive Cube (Breed)\n• Go to Breed section\n• Choose 2 living cubes (that have stars and are not in cooldown)\n• Pay CRAA (10% of minimum marketplace price, constantly updated)\n• Random NFT from graveyard will return to you as new, with all stars but no coins:\n  - Bonus is reset (back to -18.9%)\n  - Stars are restored\n  - Can ping again from scratch\n\n🔹 Where CRAA is in the System\n• CRAA for Ping comes from monthly reward pool\n• CRAA spent on Breed returns to this pool\n• CRAA from Burn burns forever\n• Everything burned goes to special wallet 0x...dead and disappears forever\n\n🔹 CRAA Token Fees\n• 3% fee on transfers — goes to game contract\n• 10% fee on DEX sales — goes to game contract\n• 0% fee on DEX purchases — no fee when buying\n• All fees support the game ecosystem and reward pool\n\n🔹 Example Strategy\nYou have three cubes:\n• Common (regular) — ping it, bonus grows by 2.7% every 24 hours up to 97%, then stops. Can sell, transfer NFT, bonus is preserved and locked coins in NFT are also preserved\n• Rare — use for Breed or accumulate CRAA\n• Mystic — rare, brings more CRAA, better not to burn\n\nPlay calmly:\n• Once every 24 hours log in and press Ping\n• Periodically burn weak cubes → get tokens\n• Or revive dead ones — get chance for rarer one\n\n💡 Tips\nWant maximum profit — ping regularly and don't burn rare cubes too early.\n💥 Burned tokens won't return — this increases the value of remaining CRAA.\n\n🚀 Our Vision\nOur plans within 1-2 months are to adjust the gameplay and renounce admin rights on NFT and token contracts. We want to conduct a social experiment and create fully social gameplay where there are no possibilities to change anything — only market and people decide.\n\nThe team has no bonuses in the contract in the form of CRAA coins. You can create a wallet, for example, in Rabby wallet in 1 minute and play our game.\n\nSoon our game will be 100% decentralized with market self-regulation. Also in plans CRAA tokens will be able to be transferred to Solana blockchain and traded, this will make the coin especially valuable, also NFTs will also be able to be transferred to Solana blockchain, and as you know on Solana blockchain there are huge trades both coins and NFTs."
   },
   "swap": {
     "buyCRAA": "Buy CRAA on Camelot",
@@ -439,10 +439,10 @@
   },
   "userNFTs": {
     "title": "Your NFTs",
-    "connectToView": "Connect your wallet to view your CrazyCube NFTs",
+    "connectToView": "Connect your wallet to view your CrazyOctagon NFTs",
     "errorLoading": "Error loading NFTs",
-    "noNFTs": "You don't own any CrazyCube NFTs yet",
-    "yourCrazyCubeNFTs": "Your CrazyCube NFTs",
+    "noNFTs": "You don't own any CrazyOctagon NFTs yet",
+    "yourCrazyOctagonNFTs": "Your CrazyOctagon NFTs",
     "showing": "Showing {{count}} of {{total}} NFTs"
   },
   "cubeAnimation": {
@@ -502,7 +502,7 @@
     "weeklyGiveaway": "Giveaway every week among active participants!",
     "github": "GitHub",
     "share": "Share",
-    "shareTitle": "CrazyCube - Where cubes cry and joke!"
+    "shareTitle": "CrazyOctagon - Where cubes cry and joke!"
   },
   "tabs": {
     "breed": "Breed",
@@ -621,7 +621,7 @@
       "nftWillBeDestroyed": "NFT will be destroyed forever",
       "craWillBeTransferred": "CRAA will be transferred to your wallet",
       "description": "Burn the cube — get CRAA. Easy money! 💰",
-      "noNFTsDescription": "You don't have any CrazyCube NFTs to burn"
+      "noNFTsDescription": "You don't have any CrazyOctagon NFTs to burn"
     },
     "ping": {
       "title": "Cube Ping",
@@ -685,7 +685,7 @@
       "gameRules": "Game Rules",
       "tokenomics": "Tokenomics",
       "connectWalletNfts": "Connect your wallet to see your NFTs.",
-      "noNfts": "You don't own any CrazyCube NFTs.",
+      "noNfts": "You don't own any CrazyOctagon NFTs.",
       "yourNfts": "Your NFTs",
       "live": "live",
       "inGraveyard": "in graveyard",
@@ -798,7 +798,7 @@
   },
   "bridge": {
     "title": "Cross-Chain Bridge 🌉",
-    "description": "Seamlessly transfer your CRAA tokens and CrazyCube NFTs between ApeChain and Solana",
+    "description": "Seamlessly transfer your CRAA tokens and CrazyOctagon NFTs between ApeChain and Solana",
     "connectWallet": "Connect Your Wallet",
     "connectWalletDesc": "Please connect your wallet to access the cross-chain bridge",
     "guide": {
@@ -817,7 +817,7 @@
       "available": "Available: 1,234.56 CRAA",
       "useMax": "Use Max",
       "selectNftLabel": "Select NFT to Bridge",
-      "selectNftPlaceholder": "Choose your CrazyCube NFT",
+      "selectNftPlaceholder": "Choose your CrazyOctagon NFT",
       "bridgeButton": "Bridge {type}",
       "bridgeAgain": "Bridge Again",
       "preparing": "Preparing...",
@@ -865,7 +865,7 @@
       "title": "🚀 Coming Soon Features",
       "features": [
         "Bridge CRAA tokens between ApeChain and Solana",
-        "Transfer CrazyCube NFTs across networks",
+        "Transfer CrazyOctagon NFTs across networks",
         "Maintain NFT metadata and rarity",
         "Low-cost cross-chain transactions",
         "Real-time bridge status tracking",

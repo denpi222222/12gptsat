@@ -1,4 +1,4 @@
-# 🚀 CrazyCube dApp - MAXIMUM SECURITY
+# 🚀 CrazyOctagon dApp - MAXIMUM SECURITY
 
 ## 🔒 Блокчейн-игра с максимальной защитой безопасности
 

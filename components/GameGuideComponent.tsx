@@ -96,7 +96,7 @@ export default function GameGuideComponent() {
       <Card className='p-6 bg-gradient-to-r from-violet-900/50 to-purple-900/50 border-violet-500/30'>
         <div className='text-center'>
           <h2 className='text-3xl font-bold text-white mb-2'>
-            🎮 How to Play CrazyCube
+            🎮 How to Play CrazyOctagon
           </h2>
           <p className='text-violet-300 text-lg'>
             Full Guide to Game Mechanics
@@ -258,7 +258,7 @@ export default function GameGuideComponent() {
 
         <div className='mt-6 p-4 bg-indigo-900/20 rounded-lg border border-indigo-500/30'>
           <p className='text-indigo-300 text-center font-semibold'>
-            🚀 CrazyCube - first NFT collection with full decentralization plan!
+            🚀 CrazyOctagon - first NFT collection with full decentralization plan!
           </p>
         </div>
       </Card>

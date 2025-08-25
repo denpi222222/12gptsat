@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useAccount } from 'wagmi';
 
-const CLAIM_BLOCK_KEY = 'crazycube:claimSectionBlocked';
+const CLAIM_BLOCK_KEY = 'CrazyOctagon:claimSectionBlocked';
 import { useChainId } from 'wagmi';
 const BLOCK_DURATION = 4 * 60 * 1000; // 4 minutes
 

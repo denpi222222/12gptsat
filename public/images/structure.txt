@@ -1,6 +1,6 @@
 /public/images/
   - craa-token.png         (CRAA token logo)
-  - logo.png              (main CrazyCube logo)
+  - logo.png              (main CrazyOctagon logo)
   - blue-cube.png         (blue sad cube with pizza)
   - purple-cowboy.png     (purple cowboy cube)
   - pink-cube.png         (pink cube with eyelashes)

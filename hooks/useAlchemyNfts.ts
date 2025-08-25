@@ -49,7 +49,7 @@ const rarityMap: Record<number, number> = {};
 });
 
 // Use addresses from config/chains.ts instead of hardcoded values
-const CRAZYCUBE_ADDR = apeChain.contracts.crazyCubeNFT.address;
+const CrazyOctagon_ADDR = apeChain.contracts.CrazyOctagonNFT.address;
 const GAME_ADDRESS = apeChain.contracts.gameProxy.address;
 
 export function useAlchemyNfts() {
@@ -119,7 +119,7 @@ export function useAlchemyNfts() {
 
       // Primary attempt: Alchemy NFT API with pagination
       try {
-        let queryPath = `/getNFTsForOwner?owner=${address}&contractAddresses[]=${CRAZYCUBE_ADDR}&limit=${PAGE_SIZE}`;
+        let queryPath = `/getNFTsForOwner?owner=${address}&contractAddresses[]=${CrazyOctagon_ADDR}&limit=${PAGE_SIZE}`;
         if (pageKey) {
           queryPath += `&pageKey=${encodeURIComponent(pageKey)}`;
         }
@@ -185,7 +185,7 @@ export function useAlchemyNfts() {
             return {
               id: `${tokenIdDec}`,
               tokenId: tokenIdDec,
-              name: metadata?.name || nft.title || `CrazyCube #${tokenIdDec}`,
+              name: metadata?.name || nft.title || `CrazyOctagon #${tokenIdDec}`,
               image: resolveIpfsUrl(imageUrl),
               attributes: metadata?.attributes || [],
               rewardBalance: 0,
@@ -202,7 +202,7 @@ export function useAlchemyNfts() {
               if (item.image && item.image !== '/favicon.ico') return item;
 
               try {
-                const metaPath = `/getNFTMetadata?contractAddress=${CRAZYCUBE_ADDR}&tokenId=${item.tokenId}`;
+                const metaPath = `/getNFTMetadata?contractAddress=${CrazyOctagon_ADDR}&tokenId=${item.tokenId}`;
                 const metaRes = await alchemyFetch('nft', metaPath, {
                   method: 'GET',
                 });
@@ -233,7 +233,7 @@ export function useAlchemyNfts() {
                 try {
                   // Check ownership first
                   const nftAddr: `0x${string}` =
-                    CRAZYCUBE_ADDR as `0x${string}`;
+                    CrazyOctagon_ADDR as `0x${string}`;
                   const owner: `0x${string}` = (await publicClient.readContract(
                     {
                       address: nftAddr,
@@ -326,7 +326,7 @@ export function useAlchemyNfts() {
         return {
           id: `${tokenIdDec}`,
           tokenId: tokenIdDec,
-          name: metadata?.name || nft.title || `CrazyCube #${tokenIdDec}`,
+          name: metadata?.name || nft.title || `CrazyOctagon #${tokenIdDec}`,
           image: (() => {
             const img =
               metadata?.image ||
@@ -350,7 +350,7 @@ export function useAlchemyNfts() {
           if (item.image && item.image !== '/favicon.ico') return item;
 
           try {
-            const metaPath = `/getNFTMetadata?contractAddress=${CRAZYCUBE_ADDR}&tokenId=${item.tokenId}`;
+            const metaPath = `/getNFTMetadata?contractAddress=${CrazyOctagon_ADDR}&tokenId=${item.tokenId}`;
             const metaRes = await alchemyFetch('nft', metaPath, {
               method: 'GET',
             });
@@ -380,7 +380,7 @@ export function useAlchemyNfts() {
           enriched.map(async item => {
             try {
               // Check ownership first
-              const nftAddr: `0x${string}` = CRAZYCUBE_ADDR as `0x${string}`;
+              const nftAddr: `0x${string}` = CrazyOctagon_ADDR as `0x${string}`;
               const owner: `0x${string}` = (await publicClient.readContract({
                 address: nftAddr,
                 abi: [

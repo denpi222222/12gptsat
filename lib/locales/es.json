@@ -1,6 +1,6 @@
 {
   "home": {
-    "title": "CrazyCube",
+    "title": "CrazyOctagon",
     "subtitle": "¡Donde los cubos lloran y bromean!",
     "balance": "Saldo:",
     "connectWallet": "Conectar MetaMask",
@@ -9,7 +9,7 @@
   "sections": {
     "bridge": {
       "title": "Puente Intercadenas 🌉",
-      "description": "Transfiere tus tokens CRAA y CrazyCube NFTs entre ApeChain y Solana. Rápido, seguro y con tarifas mínimas. ¡Cross-chain para verdaderos coleccionistas!",
+      "description": "Transfiere tus tokens CRAA y CrazyOctagon NFTs entre ApeChain y Solana. Rápido, seguro y con tarifas mínimas. ¡Cross-chain para verdaderos coleccionistas!",
       "connectWallet": "Conectar Billetera",
       "connectWalletDesc": "Por favor conecta tu billetera para acceder al puente intercadenas",
       "guide": {
@@ -28,7 +28,7 @@
         "available": "Disponible: 1,234.56 CRAA",
         "useMax": "Usar Máximo",
         "selectNftLabel": "Seleccionar NFT para Transferir",
-        "selectNftPlaceholder": "Elige tu NFT CrazyCube",
+        "selectNftPlaceholder": "Elige tu NFT CrazyOctagon",
         "bridgeButton": "Transferir {type}",
         "bridgeAgain": "Transferir de Nuevo",
         "preparing": "Preparando...",
@@ -76,7 +76,7 @@
         "title": "🚀 Próximas Funciones",
         "features": [
           "Transferir tokens CRAA entre ApeChain y Solana",
-          "Transferir NFTs CrazyCube entre redes",
+          "Transferir NFTs CrazyOctagon entre redes",
           "Mantener metadatos y rareza de NFTs",
           "Transacciones intercadenas de bajo costo",
           "Seguimiento de estado de transferencia en tiempo real",
@@ -159,7 +159,7 @@
       "title": "Ping NFTs",
       "description": "¡Haz ping a tus NFTs cada 10 días para ganar tokens CRAA! Tu bonus crece con pings consistentes.",
       "connectWallet": "Conecta tu billetera para ver tus cubos",
-      "noNFTs": "No se encontraron NFTs CrazyCube.",
+      "noNFTs": "No se encontraron NFTs CrazyOctagon.",
       "sentFor": "Ping enviado para",
       "error": "Error de ping",
       "interval": "Intervalo de Ping: 10 días",
@@ -237,9 +237,9 @@
       "connectWalletButton": "Conectar Billetera",
       "errorLoadingNfts": "Error Cargando NFTs",
       "loadingNfts": "Cargando NFTs...",
-      "loadingNftsDesc": "Obteniendo tu colección CrazyCube",
+      "loadingNftsDesc": "Obteniendo tu colección CrazyOctagon",
       "noNftsFound": "No se Encontraron NFTs",
-      "noNftsFoundDesc": "No tienes NFTs de CrazyCube para cruzar",
+      "noNftsFoundDesc": "No tienes NFTs de CrazyOctagon para cruzar",
       "goToCollection": "Ir a la Colección",
       "selectNftsForBreeding": "Selecciona 2 NFTs para Cruzar",
       "loadingGraveyardStatus": "Cargando estado del cementerio...",
@@ -289,7 +289,7 @@
     }
   },
   "footer": {
-    "copyright": "© 2025 CrazyCube — ¡Donde los cubos lloran y bromean!",
+    "copyright": "© 2025 CrazyOctagon — ¡Donde los cubos lloran y bromean!",
     "crashMessage": "Si el sitio se cayó, el cubo fue por pizza"
   },
   "construction": {
@@ -319,13 +319,13 @@
     "connected": "Conectado",
     "instruction": "Instrucción",
 "nftInspectorButton": "Ir al Inspector NFT",
-    "gameGuide": "Guía del Juego CrazyCube",
+    "gameGuide": "Guía del Juego CrazyOctagon",
     "gameGuideContent": {
-      "title": "🎮 Guía del Juego CrazyCube",
+      "title": "🎮 Guía del Juego CrazyOctagon",
       "gettingStarted": {
         "title": "🔹 Para Empezar",
         "getCRAA": "• Obtén tokens CRAA — para tarifas de gas y acciones del juego",
-        "buyNFTs": "• Compra NFTs CrazyCube en el marketplace"
+        "buyNFTs": "• Compra NFTs CrazyOctagon en el marketplace"
       },
       "howToStart": {
         "title": "🔹 Cómo Empezar a Jugar",
@@ -407,7 +407,7 @@
         "decentralized": "Pronto nuestro juego será 100% descentralizado con autorregulación del mercado."
       }
     },
-    "gameGuideContent": "🎮 Guía del Juego CrazyCube\n\n🔹 Comenzando\n• Obtén tokens CRAA — para tarifas de gas y acciones del juego\n• Compra NFTs CrazyCube en el marketplace\n• Antes de comprar, verifica el NFT en la sección \\\"Información\\\" → \\\"Inspector NFT\\\" — ingresa el número del NFT y obtén información completa: cantidad de monedas bloqueadas, estrellas restantes, estado de cooldown y otros parámetros\n\n🔹 Cómo Empezar a Jugar\n• Ve a la pestaña Ping — verás tus NFTs\n• Para un nuevo cubo, presiona Activar — este es el primer Ping, no da CRAA pero inicia el temporizador\n• Después de la activación, puedes hacer ping (presiona Ping). Por defecto una vez cada 24 horas, las recompensas comienzan a acumularse\n• Cada Ping exitoso trae CRAA — la cantidad depende de:\n  - Rareza del cubo (Common, Rare, Mystic, etc.)\n  - Tu bono de experiencia — crece cada 24 horas sin perder pings\n  - Tiempo entre pings (si pasaron más períodos, más CRAA)\n\n🔹 Qué es el Bono de Experiencia\n• Inicialmente todos los cubos tienen penalización -18.9%\n• Cada 24 horas cuando haces ping obtienes bono — +2.7%\n• Máximo que puedes alcanzar +97.2% + los bonos por rareza también cuentan\n• Si pierdes más de 10 días — el bono no aumentará\n• Si pierdes 20+ días — el bono se reinicia a -18.9%\n\n🔹 Cómo Obtener CRAA\n• CRAA no cae a la billetera inmediatamente, sino que se acumula dentro del cubo (así cada NFT tiene valor real)\n• Para recolectar — necesitas quemar el cubo (Quemar) (tu cubo va a la sección cementerio y ya no te pertenece, obtienes monedas CRAA en la sección claim)\n\n🔹 Cómo Quemar\n• Ve a la sección Quemar\n• Elige cubo y tiempo de espera:\n  - 12 minutos → 50% al jugador\n  - 60 minutos → 70%\n  - 255 minutos → 80%\n• El resto se divide entre el pool y quema permanente (va al dead wallet oficial)\n• Después del tiempo elegido, ve y presiona Reclamar — CRAA vendrá a tu billetera\n\n🔹 Cómo Revivir Cubo (Cruzar)\n• Ve a la sección Cruzar\n• Elige 2 cubos vivos (que tengan estrellas y no estén en cooldown)\n• Paga CRAA (10% del precio mínimo del marketplace, constantemente actualizado)\n• Un NFT aleatorio del cementerio regresará a ti como nuevo, con todas las estrellas pero sin monedas:\n  - El bono se reinicia (de vuelta a -18.9%)\n  - Las estrellas se restauran\n  - Puedes hacer ping de nuevo desde cero\n\n🔹 Dónde está CRAA en el Sistema\n• CRAA para Ping viene del pool de recompensas mensual\n• CRAA gastado en Cruzar regresa a este pool\n• CRAA de Quemar se quema para siempre\n• Todo lo quemado va al billetera especial 0x...dead y desaparece para siempre\n\n🔹 Comisiones del Token CRAA\n• 3% de comisión en transferencias — va al contrato del juego\n• 10% de comisión en ventas DEX — va al contrato del juego\n• 0% de comisión en compras DEX — no hay comisión al comprar\n• Todas las comisiones apoyan el ecosistema del juego y el pool de recompensas\n\n🔹 Estrategia de Ejemplo\nTienes tres cubos:\n• Common (regular) — hazle ping, el bono crece 2.7% cada 24 horas hasta 97%, luego se detiene. Puedes vender, transferir NFT, el bono se preserva y las monedas bloqueadas en NFT también se preservan\n• Rare — úsalo para Cruzar o acumula CRAA\n• Mystic — raro, trae más CRAA, mejor no quemar\n\nJuega tranquilo:\n• Una vez cada 24 horas entra y presiona Ping\n• Periódicamente quema cubos débiles → obtén tokens\n• O revive muertos — obtén oportunidad para uno más raro\n\n💡 Consejos\n¿Quieres máxima ganancia? — haz ping regularmente y no quemes cubos raros demasiado pronto.\n💥 Los tokens quemados no regresarán — esto aumenta el valor de los CRAA restantes.\n\n🚀 Nuestra Visión\nNuestros planes dentro de 1-2 meses son ajustar el gameplay y renunciar a los derechos de administrador en los contratos NFT y token. Queremos conducir un experimento social y crear gameplay completamente social donde no hay posibilidades de cambiar nada — solo el mercado y la gente deciden.\n\nEl equipo no tiene bonos en el contrato en forma de monedas CRAA. Puedes crear una billetera, por ejemplo, en Rabby wallet en 1 minuto y jugar nuestro juego.\n\nPronto nuestro juego será 100% descentralizado con autorregulación del mercado. También en los planes los tokens CRAA podrán ser transferidos a la blockchain de Solana y comercializados, esto hará que la moneda sea especialmente valiosa, también los NFTs podrán ser transferidos a la blockchain de Solana, y como sabes en la blockchain de Solana hay enormes operaciones tanto de monedas como de NFTs."
+    "gameGuideContent": "🎮 Guía del Juego CrazyOctagon\n\n🔹 Comenzando\n• Obtén tokens CRAA — para tarifas de gas y acciones del juego\n• Compra NFTs CrazyOctagon en el marketplace\n• Antes de comprar, verifica el NFT en la sección \\\"Información\\\" → \\\"Inspector NFT\\\" — ingresa el número del NFT y obtén información completa: cantidad de monedas bloqueadas, estrellas restantes, estado de cooldown y otros parámetros\n\n🔹 Cómo Empezar a Jugar\n• Ve a la pestaña Ping — verás tus NFTs\n• Para un nuevo cubo, presiona Activar — este es el primer Ping, no da CRAA pero inicia el temporizador\n• Después de la activación, puedes hacer ping (presiona Ping). Por defecto una vez cada 24 horas, las recompensas comienzan a acumularse\n• Cada Ping exitoso trae CRAA — la cantidad depende de:\n  - Rareza del cubo (Common, Rare, Mystic, etc.)\n  - Tu bono de experiencia — crece cada 24 horas sin perder pings\n  - Tiempo entre pings (si pasaron más períodos, más CRAA)\n\n🔹 Qué es el Bono de Experiencia\n• Inicialmente todos los cubos tienen penalización -18.9%\n• Cada 24 horas cuando haces ping obtienes bono — +2.7%\n• Máximo que puedes alcanzar +97.2% + los bonos por rareza también cuentan\n• Si pierdes más de 10 días — el bono no aumentará\n• Si pierdes 20+ días — el bono se reinicia a -18.9%\n\n🔹 Cómo Obtener CRAA\n• CRAA no cae a la billetera inmediatamente, sino que se acumula dentro del cubo (así cada NFT tiene valor real)\n• Para recolectar — necesitas quemar el cubo (Quemar) (tu cubo va a la sección cementerio y ya no te pertenece, obtienes monedas CRAA en la sección claim)\n\n🔹 Cómo Quemar\n• Ve a la sección Quemar\n• Elige cubo y tiempo de espera:\n  - 12 minutos → 50% al jugador\n  - 60 minutos → 70%\n  - 255 minutos → 80%\n• El resto se divide entre el pool y quema permanente (va al dead wallet oficial)\n• Después del tiempo elegido, ve y presiona Reclamar — CRAA vendrá a tu billetera\n\n🔹 Cómo Revivir Cubo (Cruzar)\n• Ve a la sección Cruzar\n• Elige 2 cubos vivos (que tengan estrellas y no estén en cooldown)\n• Paga CRAA (10% del precio mínimo del marketplace, constantemente actualizado)\n• Un NFT aleatorio del cementerio regresará a ti como nuevo, con todas las estrellas pero sin monedas:\n  - El bono se reinicia (de vuelta a -18.9%)\n  - Las estrellas se restauran\n  - Puedes hacer ping de nuevo desde cero\n\n🔹 Dónde está CRAA en el Sistema\n• CRAA para Ping viene del pool de recompensas mensual\n• CRAA gastado en Cruzar regresa a este pool\n• CRAA de Quemar se quema para siempre\n• Todo lo quemado va al billetera especial 0x...dead y desaparece para siempre\n\n🔹 Comisiones del Token CRAA\n• 3% de comisión en transferencias — va al contrato del juego\n• 10% de comisión en ventas DEX — va al contrato del juego\n• 0% de comisión en compras DEX — no hay comisión al comprar\n• Todas las comisiones apoyan el ecosistema del juego y el pool de recompensas\n\n🔹 Estrategia de Ejemplo\nTienes tres cubos:\n• Common (regular) — hazle ping, el bono crece 2.7% cada 24 horas hasta 97%, luego se detiene. Puedes vender, transferir NFT, el bono se preserva y las monedas bloqueadas en NFT también se preservan\n• Rare — úsalo para Cruzar o acumula CRAA\n• Mystic — raro, trae más CRAA, mejor no quemar\n\nJuega tranquilo:\n• Una vez cada 24 horas entra y presiona Ping\n• Periódicamente quema cubos débiles → obtén tokens\n• O revive muertos — obtén oportunidad para uno más raro\n\n💡 Consejos\n¿Quieres máxima ganancia? — haz ping regularmente y no quemes cubos raros demasiado pronto.\n💥 Los tokens quemados no regresarán — esto aumenta el valor de los CRAA restantes.\n\n🚀 Nuestra Visión\nNuestros planes dentro de 1-2 meses son ajustar el gameplay y renunciar a los derechos de administrador en los contratos NFT y token. Queremos conducir un experimento social y crear gameplay completamente social donde no hay posibilidades de cambiar nada — solo el mercado y la gente deciden.\n\nEl equipo no tiene bonos en el contrato en forma de monedas CRAA. Puedes crear una billetera, por ejemplo, en Rabby wallet en 1 minuto y jugar nuestro juego.\n\nPronto nuestro juego será 100% descentralizado con autorregulación del mercado. También en los planes los tokens CRAA podrán ser transferidos a la blockchain de Solana y comercializados, esto hará que la moneda sea especialmente valiosa, también los NFTs podrán ser transferidos a la blockchain de Solana, y como sabes en la blockchain de Solana hay enormes operaciones tanto de monedas como de NFTs."
   },
   "tabs": {
     "breed": "Cruzar",
@@ -440,7 +440,7 @@
     "retry": "Reintentar",
     "loading": "Cargando...",
     "loadingNFTs": "Cargando NFTs...",
-    "fetchingCollection": "Obteniendo tu colección CrazyCube",
+    "fetchingCollection": "Obteniendo tu colección CrazyOctagon",
     "noNFTsFound": "No se encontraron NFTs",
     "goToCollection": "Ir a la colección",
     "total": "total"
@@ -489,7 +489,7 @@
     "enterNftId": "Ingresa ID del NFT para verificar",
     "connectWallet": "Conecta billetera para verificar NFT",
     "connectWalletNfts": "Conecta billetera para ver tus NFTs",
-    "noNfts": "No tienes NFTs de CrazyCube",
+    "noNfts": "No tienes NFTs de CrazyOctagon",
     "yourNfts": "Tus NFTs",
     "live": "vivos",
     "inGraveyard": "en cementerio",
@@ -508,7 +508,7 @@
     "locked": "Bloqueado",
     "timeLeft": "Tiempo Restante",
     "guide": {
-      "title": "Cómo Jugar CrazyCube",
+      "title": "Cómo Jugar CrazyOctagon",
       "subtitle": "Guía completa de mecánicas del juego"
     },
     "tabs": {
@@ -582,7 +582,7 @@
         "title": "Fase 3: Libertad",
         "desc": "Gestión completamente descentralizada solo por mercado"
       },
-      "tagline": "🚀 CrazyCube - ¡primera colección NFT con plan de descentralización completa!"
+      "tagline": "🚀 CrazyOctagon - ¡primera colección NFT con plan de descentralización completa!"
     },
     "title": "Información y analíticas"
   },
@@ -644,7 +644,7 @@
       "burnWarning": "Advertencia: ¡el quemado es irreversible!",
       "nftWillBeDestroyed": "El NFT será destruido para siempre",
       "craWillBeTransferred": "CRA será transferido a tu billetera",
-      "noNFTsDescription": "No tienes NFTs de CrazyCube para quemar"
+      "noNFTsDescription": "No tienes NFTs de CrazyOctagon para quemar"
     },
     "ping": {
       "title": "Ping de Cubos",
@@ -708,7 +708,7 @@
       "gameRules": "Reglas del Juego",
       "tokenomics": "Tokenómica",
       "connectWalletNfts": "Conecta tu billetera para ver tus NFTs.",
-      "noNfts": "No posees ningún NFT de CrazyCube.",
+      "noNfts": "No posees ningún NFT de CrazyOctagon.",
       "yourNfts": "Tus NFTs",
       "live": "vivos",
       "inGraveyard": "en cementerio",
@@ -832,7 +832,7 @@
   },
   "burn": {
     "description": "Burn the cube — get CRA. Easy money! 💰",
-    "noNFTsDescription": "You don't have any CrazyCube NFTs to burn",
+    "noNFTsDescription": "You don't have any CrazyOctagon NFTs to burn",
     "interface": {
       "burnButton": "Quemar",
       "insufficientCRAA": "CRAA insuficiente",

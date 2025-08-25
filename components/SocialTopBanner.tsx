@@ -12,7 +12,7 @@ export default function SocialTopBanner() {
 
   useEffect(() => {
     if (!isMobile) return;
-    const dismissedFlag = localStorage.getItem('crazycube:socialBanner:dismissed');
+    const dismissedFlag = localStorage.getItem('CrazyOctagon:socialBanner:dismissed');
     if (dismissedFlag === '1') return;
     setVisible(true);
   }, [isMobile]);
@@ -20,7 +20,7 @@ export default function SocialTopBanner() {
   const close = () => {
     setDismissed(true);
     setVisible(false);
-    localStorage.setItem('crazycube:socialBanner:dismissed', '1');
+    localStorage.setItem('CrazyOctagon:socialBanner:dismissed', '1');
   };
 
   if (!isMobile || dismissed || !visible) return null;

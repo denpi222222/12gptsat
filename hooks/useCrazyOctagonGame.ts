@@ -18,7 +18,7 @@ import { ALLOWED_CONTRACTS } from '@/config/allowedContracts';
 import { toast } from '@/hooks/use-toast';
 import { formatWithCommas } from '@/utils/formatNumber';
 
-// ABI for the game contract CrazyCubeUltimate
+// ABI for the game contract CrazyOctagonUltimate
 const GAME_CONTRACT_ABI = [
   // Read functions
   {
@@ -248,7 +248,7 @@ export interface BurnRecord {
   graveyardReleaseTime?: number;
 }
 
-export const useCrazyCubeGame = () => {
+export const useCrazyOctagonGame = () => {
   const { address, isConnected } = useAccount();
   const chainId = useChainId();
   const [isLoading, setIsLoading] = useState(false);

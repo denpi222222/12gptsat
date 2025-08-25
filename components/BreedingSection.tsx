@@ -8,7 +8,7 @@ import {
   getNFTName,
 } from '@/hooks/useUserNFTs';
 import { useMultipleNFTGameInfo } from '@/hooks/useNFTGameData';
-import { useCrazyCubeGame } from '@/hooks/useCrazyCubeGame';
+import { useCrazyOctagonGame } from '@/hooks/useCrazyOctagonGame';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -186,7 +186,7 @@ export const BreedingSection = () => {
     txHash,
     writeError,
     txError,
-  } = useCrazyCubeGame();
+  } = useCrazyOctagonGame();
 
   const handleSelectParent = (tokenId: string) => {
     setSelectedParents(prev => {

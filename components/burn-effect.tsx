@@ -101,7 +101,7 @@ export function BurnEffect({ isActive, onComplete }: BurnEffectProps) {
             🔥 BURNING NFT 🔥
           </h3>
           <p className='text-white'>
-            Your CrazyCube is being consumed by flames...
+            Your CrazyOctagon is being consumed by flames...
           </p>
         </motion.div>
       </div>

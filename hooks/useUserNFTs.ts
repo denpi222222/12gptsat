@@ -84,7 +84,7 @@ export const decimalToHex = (decimal: string): string => {
 
 // Function to get tokenId in decimal format
 export const getTokenIdAsDecimal = (nft: any): string => {
-  // 1) Try to extract ID from name/title (e.g. "CrazyCube #3430")
+  // 1) Try to extract ID from name/title (e.g. "CrazyOctagon #3430")
   const nameField = nft.metadata?.name || nft.title || nft.name || '';
   const match = nameField.match(/#(\d+)/);
   if (match && match[1]) {

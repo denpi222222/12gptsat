@@ -39,9 +39,9 @@ export function useNFTStats() {
 
   // graveyard size and burnRewardPool from game contract
   const gameAddress = (
-    process.env.NEXT_PUBLIC_CRAZYCUBE_CONTRACT &&
-    process.env.NEXT_PUBLIC_CRAZYCUBE_CONTRACT !== 'undefined'
-      ? process.env.NEXT_PUBLIC_CRAZYCUBE_CONTRACT
+    process.env.NEXT_PUBLIC_CrazyOctagon_CONTRACT &&
+    process.env.NEXT_PUBLIC_CrazyOctagon_CONTRACT !== 'undefined'
+      ? process.env.NEXT_PUBLIC_CrazyOctagon_CONTRACT
       : '0x606a47707d5aEdaE9f616A6f1853fE3075bA740B'
   ) as `0x${string}`;
 

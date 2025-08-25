@@ -2,7 +2,7 @@ import { apeChain } from './chains';
 
 // ---- Export commonly-used constants (safe on server) ----
 export const MAIN_CHAIN_ID = apeChain.id;
-export const NFT_CONTRACT_ADDRESS = apeChain.contracts.crazyCubeNFT.address;
+export const NFT_CONTRACT_ADDRESS = apeChain.contracts.CrazyOctagonNFT.address;
 export const TOKEN_CONTRACT_ADDRESS = apeChain.contracts.crazyToken.address;
 export const GAME_CONTRACT_ADDRESS = apeChain.contracts.gameProxy.address;
 
@@ -51,7 +51,7 @@ if (typeof window !== 'undefined') {
       if (chain.id !== apeChain.id) {
         if (typeof window !== 'undefined') {
           window.dispatchEvent(
-            new CustomEvent('crazycube:toast', {
+            new CustomEvent('crazyoctagon:toast', {
               detail: {
                 title: 'Please switch to ApeChain',
                 description: 'Нажмите Switch Network в кошельке',
@@ -75,10 +75,10 @@ if (typeof window !== 'undefined') {
       walletConnect({
         projectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || '',
         metadata: {
-          name: 'CrazyCube',
-          description: 'CrazyCube NFT Game',
+          name: 'CrazyOctagon',
+          description: 'CrazyOctagon NFT Game',
           url: window.location.origin,
-          icons: ['https://crazycube.xyz/favicon.ico'],
+          icons: ['https://CrazyOctagon.xyz/favicon.ico'],
         },
         showQrModal: true,
       }),
@@ -87,9 +87,9 @@ if (typeof window !== 'undefined') {
         ? [
             metaMask({
               dappMetadata: {
-                name: 'CrazyCube',
+                name: 'CrazyOctagon',
                 url: window.location.origin,
-                iconUrl: 'https://crazycube.xyz/favicon.ico',
+                iconUrl: 'https://CrazyOctagon.xyz/favicon.ico',
               },
             }),
             injected({ shimDisconnect: true }),

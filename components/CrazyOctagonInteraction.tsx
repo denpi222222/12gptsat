@@ -1,12 +1,12 @@
-// components/CrazyCubeInteraction.tsx
+// components/CrazyOctagonInteraction.tsx
 'use client'; // Directive for client components in Next.js App Router
 
 import { useState, useEffect } from 'react';
 import { useAccount } from 'wagmi';
-import { useCrazyCubeUltimate } from '../hooks/useCrazyCubeUltimate';
+import { useCrazyOctagonUltimate } from '../hooks/useCrazyOctagonUltimate';
 // import { formatEther } from 'viem'; // For formatting big numbers if needed. Uncomment if you plan to use.
 
-export function CrazyCubeInteraction() {
+export function CrazyOctagonInteraction() {
   const { address: accountAddress, isConnected, chain } = useAccount();
   const {
     totalSupply,
@@ -25,7 +25,7 @@ export function CrazyCubeInteraction() {
     hash,
     writeContractError,
     txConfirmationError,
-  } = useCrazyCubeUltimate();
+  } = useCrazyOctagonUltimate();
 
   const [tokenIdToBurn, setTokenIdToBurn] = useState('');
   const [tokenIdToActivate, setTokenIdToActivate] = useState('');
@@ -86,7 +86,7 @@ export function CrazyCubeInteraction() {
     <div
       style={{ border: '1px solid #ccc', padding: '20px', margin: '20px 0' }}
     >
-      <h2>Test interaction with CrazyCubeUltimate</h2>
+      <h2>Test interaction with CrazyOctagonUltimate</h2>
       <p>
         <strong>Your address:</strong> {accountAddress}
       </p>

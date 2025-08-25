@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { UnifiedNftCard } from './UnifiedNftCard';
 import { Flame, Star, Loader2, SatelliteDish } from 'lucide-react';
-import { useCrazyCubeGame, type NFTGameData } from '@/hooks/useCrazyCubeGame';
+import { useCrazyOctagonGame, type NFTGameData } from '@/hooks/useCrazyOctagonGame';
 import { usePerformanceContext } from '@/hooks/use-performance-context';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -81,7 +81,7 @@ export const BurnCard = React.memo(function BurnCard({
     pingInterval,
     getBurnSplit,
     craaBalance,
-  } = useCrazyCubeGame();
+  } = useCrazyOctagonGame();
   const { toast } = useToast();
   const [data, setData] = useState<NFTGameData | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
@@ -434,7 +434,7 @@ export const BurnCard = React.memo(function BurnCard({
             <UnifiedNftCard
               imageSrc={nft.image}
               tokenId={tokenId}
-              title={nft.name || `CrazyCube #${tokenId}`}
+              title={nft.name || `CrazyOctagon #${tokenId}`}
               rarityLabel={
                 data?.rarity ? getLabel(data.rarity) || 'Common' : 'Common'
               }

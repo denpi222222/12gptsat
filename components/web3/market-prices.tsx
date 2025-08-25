@@ -260,7 +260,7 @@ const MarketPrices = () => {
             {/* NFT Marketplace Link */}
             <div className='mt-4 pt-4 border-t border-purple-500/20'>
               <a
-                href='https://magiceden.us/collections/apechain/crazycube-2'
+                href='https://magiceden.us/collections/apechain/CrazyOctagon-2'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='flex items-center justify-center w-full py-3 px-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 rounded-lg transition-all duration-300 transform hover:scale-105'

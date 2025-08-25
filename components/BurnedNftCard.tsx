@@ -81,7 +81,7 @@ export const BurnedNftCard = React.memo(function BurnedNftCard({
       className='scale-[0.75]'
     >
       <Card
-        className={`bg-gradient-to-br from-yellow-900/80 to-amber-800/80 border-2 rounded-xl transition-all duration-300 hover:scale-105 ${isClaimReady ? 'border-yellow-500/60' : 'border-amber-600/50 hover:border-amber-500/60'} flex flex-col h-full w-full max-w-[220px]`}
+        className={`shimmer bg-gradient-to-br from-yellow-900/80 to-amber-800/80 border-2 rounded-xl transition-all duration-300 hover:scale-105 ${isClaimReady ? 'border-yellow-500/60' : 'border-amber-600/50 hover:border-amber-500/60'} flex flex-col h-full w-full max-w-[220px]`}
       >
         <div className='flex flex-col justify-between h-full'>
           <CardHeader className='p-0 mb-4'>
@@ -152,7 +152,7 @@ export const BurnedNftCard = React.memo(function BurnedNftCard({
                 <Button
                   disabled={!isClaimReady || isClaiming}
                   onClick={handleClaim}
-                  className='mt-2 w-full rounded-lg bg-amber-500 px-4 py-3 text-base font-bold text-black transition-all hover:bg-amber-400 disabled:opacity-50 disabled:cursor-not-allowed'
+                  className='mt-2 w-full btn-monad'
                 >
                   {isClaiming
                     ? t('rewards.processing', 'PROCESSING...')

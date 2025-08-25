@@ -27,7 +27,7 @@ export const apeChain = defineChain({
     default: { name: 'ApeScan', url: 'https://apescan.io' },
   },
   contracts: {
-    crazyCubeNFT: {
+    CrazyOctagonNFT: {
       address: '0x606a47707d5aEdaE9f616A6f1853fE3075bA740B' as `0x${string}`,
       blockCreated: 1_234_567,
     },

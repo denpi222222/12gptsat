@@ -33,7 +33,7 @@ export function useBurnedTokenIds() {
         setTokenIds([]);
         return;
       }
-      const cacheKey = `crazycube:burn:${address.toLowerCase()}`;
+      const cacheKey = `CrazyOctagon:burn:${address.toLowerCase()}`;
       const cachedRaw = localStorage.getItem(cacheKey);
       if (cachedRaw) {
         try {

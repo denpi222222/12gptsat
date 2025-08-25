@@ -34,7 +34,7 @@ export async function GET(request: NextRequest) {
     });
 
     const tokenId = await client.readContract({
-      address: apeChain.contracts.crazyCubeNFT.address as `0x${string}`,
+      address: apeChain.contracts.CrazyOctagonNFT.address as `0x${string}`,
       abi: nftAbi,
       functionName: 'tokenOfOwnerByIndex',
       args: [ownerAddr as `0x${string}`, BigInt(indexStr)],

@@ -17,7 +17,7 @@ import {
   RefreshCw,
 } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { useCrazyCubeGame } from '@/hooks/useCrazyCubeGame';
+import { useCrazyOctagonGame } from '@/hooks/useCrazyOctagonGame';
 import { useTranslation } from 'react-i18next';
 import { createPublicClient, http, formatEther } from 'viem';
 import { apeChain } from '@/config/chains';
@@ -59,7 +59,7 @@ export default function NFTCooldownInspector() {
     pingInterval,
     breedCooldown,
     isConnected,
-  } = useCrazyCubeGame();
+  } = useCrazyOctagonGame();
 
   // Update current time every second for live countdown
   useEffect(() => {

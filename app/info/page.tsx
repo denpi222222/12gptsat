@@ -269,7 +269,7 @@ export default function InfoPage() {
                     <Card className='p-6 bg-gradient-to-r from-violet-900/50 to-purple-900/50 border-violet-500/30 mobile-safe-button'>
                       <div className='text-center'>
                         <h2 className='text-3xl font-bold text-white mb-2'>
-                          🎮 {t('info.guide.title', 'How to play CrazyCube')}
+                          🎮 {t('info.guide.title', 'How to play CrazyOctagon')}
                         </h2>
                         <p className='text-violet-300 text-lg'>
                           {t(
@@ -560,7 +560,7 @@ export default function InfoPage() {
                         <p className='text-indigo-300 text-center font-semibold'>
                           {t(
                             'info.roadmap.callout',
-                            '🚀 CrazyCube is the first NFT collection with a full decentralization plan!'
+                            '🚀 CrazyOctagon is the first NFT collection with a full decentralization plan!'
                           )}
                         </p>
                       </div>

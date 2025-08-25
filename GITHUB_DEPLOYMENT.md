@@ -5,14 +5,14 @@
 ### 1. Создайте новый репозиторий на GitHub:
 - Перейдите на https://github.com
 - Нажмите "New repository"
-- Название: `crazycube-ultimate-game`
+- Название: `CrazyOctagon-ultimate-game`
 - Описание: `Complete Web3 NFT Game with Security Features`
 - **НЕ** ставьте галочки "Add a README file", "Add .gitignore", "Choose a license"
 - Нажмите "Create repository"
 
 ### 2. Подключите локальный репозиторий к GitHub:
 ```bash
-git remote add origin https://github.com/denpi222222/crazycube-ultimate-game.git
+git remote add origin https://github.com/denpi222222/CrazyOctagon-ultimate-game.git
 git branch -M main
 git push -u origin main
 ```
@@ -29,7 +29,7 @@ git status
 - Нажмите "New site from Git"
 - Выберите "GitHub"
 - Авторизуйтесь через GitHub
-- Выберите репозиторий `crazycube-ultimate-game`
+- Выберите репозиторий `CrazyOctagon-ultimate-game`
 
 ### 2. Настройте параметры сборки:
 ```

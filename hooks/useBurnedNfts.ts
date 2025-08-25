@@ -533,11 +533,11 @@ export const useClaimReward = (tokenId: string, onSuccess?: () => void) => {
       
       // Clear cache immediately after successful claim
       if (typeof window !== 'undefined' && address) {
-        const cacheKey = `crazycube:burnedNfts:${address}`;
+        const cacheKey = `CrazyOctagon:burnedNfts:${address}`;
         localStorage.removeItem(cacheKey);
         
         // Also clear claimable rewards cache to force refresh
-        const claimableCacheKey = `crazycube:claimable:${address}`;
+        const claimableCacheKey = `CrazyOctagon:claimable:${address}`;
         localStorage.removeItem(claimableCacheKey);
       }
       

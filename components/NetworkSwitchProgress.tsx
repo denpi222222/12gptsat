@@ -36,7 +36,7 @@ export function NetworkSwitchProgress({
               Connected to ApeChain
             </h3>
             <p className='text-green-200 text-sm'>
-              You&apos;re ready to use CrazyCube dApp! 🚀
+              You&apos;re ready to use CrazyOctagon dApp! 🚀
             </p>
           </div>
         </div>

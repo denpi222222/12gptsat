@@ -14,11 +14,11 @@ export default function EthereumGuard() {
     if (typeof window === 'undefined' || !(window as { ethereum?: unknown }).ethereum) return;
     const eth = (window as { ethereum?: unknown }).ethereum as { 
       request?: (args: { method: string; params?: unknown[] }) => Promise<unknown>;
-      __crazycube_guard_installed?: boolean;
+      __CrazyOctagon_guard_installed?: boolean;
     };
 
-    if (eth.__crazycube_guard_installed) return;
-    eth.__crazycube_guard_installed = true;
+    if (eth.__CrazyOctagon_guard_installed) return;
+    eth.__CrazyOctagon_guard_installed = true;
 
     const allowlist = new Set<string>([
       NFT_CONTRACT_ADDRESS.toLowerCase(),

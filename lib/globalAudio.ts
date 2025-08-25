@@ -10,13 +10,13 @@ export function getGlobalAudioElement(): HTMLAudioElement | null {
   if (cachedAudio && document.body.contains(cachedAudio)) {
     return cachedAudio;
   }
-  const existing = document.getElementById('crazycube-global-audio') as HTMLAudioElement | null;
+  const existing = document.getElementById('CrazyOctagon-global-audio') as HTMLAudioElement | null;
   if (existing) {
     cachedAudio = existing;
     return existing;
   }
   const audio = document.createElement('audio');
-  audio.id = 'crazycube-global-audio';
+  audio.id = 'CrazyOctagon-global-audio';
   audio.preload = 'metadata';
   audio.style.display = 'none';
   audio.setAttribute('aria-hidden', 'true');

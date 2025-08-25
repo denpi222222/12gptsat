@@ -35,7 +35,7 @@ export async function GET(request: NextRequest) {
 
     try {
       const tokenURI = await client.readContract({
-        address: apeChain.contracts.crazyCubeNFT.address as `0x${string}`,
+        address: apeChain.contracts.CrazyOctagonNFT.address as `0x${string}`,
         abi: nftAbi,
         functionName: 'tokenURI',
         args: [BigInt(idNum)],

@@ -34,7 +34,7 @@ const ABI_MIN = [
   },
 ] as const;
 
-const CACHE_KEY = 'crazycube:graveyard:tokens';
+const CACHE_KEY = 'CrazyOctagon:graveyard:tokens';
 const REFRESH_INTERVAL_MS = 10000; // 10 sec
 
 // Retry logic with exponential backoff

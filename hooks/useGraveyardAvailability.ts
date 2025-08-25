@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const CACHE_KEY = 'crazycube:graveyard:has';
+const CACHE_KEY = 'CrazyOctagon:graveyard:has';
 const TTL = 60 * 1000; // 1 min
 
 export function useGraveyardAvailability() {

@@ -2,7 +2,7 @@
 
 import { useReadContract, useReadContracts } from 'wagmi';
 import { formatEther } from 'viem';
-import { useCrazyCubeGame } from './useCrazyCubeGame';
+import { useCrazyOctagonGame } from './useCrazyOctagonGame';
 import { apeChain } from '../config/chains';
 import { useEffect } from 'react';
 
@@ -115,7 +115,7 @@ export const useNFTGameInfo = (tokenId: string | undefined) => {
   });
 
   const { pingInterval, breedCooldown: globalBreedCooldown } =
-    useCrazyCubeGame();
+    useCrazyOctagonGame();
 
   const formatNFTInfo = (): NFTGameInfo | null => {
     if (!nftData || !nftState || !tokenId) return null;
@@ -185,7 +185,7 @@ export const useBurnRecord = (tokenId: string | undefined) => {
   });
 
   const { pingInterval, breedCooldown: globalBreedCooldown } =
-    useCrazyCubeGame();
+    useCrazyOctagonGame();
 
   const formatBurnRecord = (): BurnRecordInfo | null => {
     if (!burnRecord || !tokenId) return null;
@@ -268,7 +268,7 @@ export const useMultipleNFTGameInfo = (tokenIds: string[]) => {
   });
 
   const { pingInterval, breedCooldown: globalBreedCooldown } =
-    useCrazyCubeGame();
+    useCrazyOctagonGame();
 
   const formatMultipleNFTInfo = (): NFTGameInfo[] => {
     if (!nftDataResults || !nftStateResults) return [];

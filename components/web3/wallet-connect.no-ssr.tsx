@@ -116,7 +116,7 @@ export function WalletConnectNoSSR() {
           <div className='text-slate-300 text-sm leading-relaxed space-y-6'>
             {/* Title */}
             <div className='text-lg font-bold text-cyan-400 mb-4'>
-              {guideContent.title || '🎮 CrazyCube Game Guide'}
+              {guideContent.title || '🎮 CrazyOctagon Game Guide'}
             </div>
             
             {/* Getting Started */}
@@ -368,7 +368,7 @@ export function WalletConnectNoSSR() {
                   <DialogHeader>
                     <DialogTitle className='text-xl font-bold text-white flex items-center'>
                       <BookOpen className='w-5 h-5 mr-2 text-cyan-400' />
-                      {t('wallet.gameGuide', 'CrazyCube Game Guide')}
+                      {t('wallet.gameGuide', 'CrazyOctagon Game Guide')}
                     </DialogTitle>
                   </DialogHeader>
                   <ScrollArea className='h-[60vh] pr-4'>

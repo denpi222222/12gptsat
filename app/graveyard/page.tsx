@@ -7,7 +7,7 @@ import dynamic from 'next/dynamic';
 import { Button } from '@/components/ui/button';
 import { useGraveyardTokens } from '@/hooks/useGraveyardTokens';
 import { useMobile } from '@/hooks/use-mobile';
-import { useCrazyCubeGame } from '@/hooks/useCrazyCubeGame';
+import { useCrazyOctagonGame } from '@/hooks/useCrazyOctagonGame';
 import { GraveyardCubeCard } from '@/components/GraveyardCubeCard';
 import { motion, AnimatePresence } from 'framer-motion';
 import { TabNavigation } from '@/components/tab-navigation';
@@ -24,7 +24,7 @@ export default function GraveyardPage() {
   const { isMobile } = useMobile();
   const { t } = useTranslation();
   const { tokens: tokenIds, loading: isLoadingNFTs } = useGraveyardTokens();
-  const { graveyardSize } = useCrazyCubeGame();
+  const { graveyardSize } = useCrazyOctagonGame();
   const [mounted, setMounted] = useState(false);
   const [showTitle, setShowTitle] = useState(false);
   const [showCubeAnimation, setShowCubeAnimation] = useState(false);
@@ -50,7 +50,7 @@ export default function GraveyardPage() {
 
   if (!mounted)
     return (
-      <div className='min-h-screen bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 flex items-center justify-center text-white'>
+      <div className='min-h-screen graveyard-bg flex items-center justify-center text-white'>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -62,7 +62,7 @@ export default function GraveyardPage() {
     );
 
   return (
-    <div className='min-h-screen mobile-content-wrapper bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 p-4 pb-24'>
+    <div className='min-h-screen mobile-content-wrapper graveyard-bg p-4 pb-24'>
       {/* Quick cube disintegration animation on page entry */}
       {showCubeAnimation && (
         <motion.div

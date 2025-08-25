@@ -7,7 +7,7 @@ if (
   window.trustedTypes.createPolicy
 ) {
   // Create a comprehensive security policy
-  window.trustedTypes.createPolicy('crazycube-security', {
+  window.trustedTypes.createPolicy('CrazyOctagon-security', {
     createHTML: string => {
       // Enhanced HTML sanitization with strict rules
       return DOMPurify.sanitize(string, {
@@ -180,7 +180,7 @@ export const safeHTML = (html: string): string => {
   if (typeof window !== 'undefined' && window.trustedTypes) {
     try {
       return window.trustedTypes
-        .createPolicy('crazycube-security', {
+        .createPolicy('CrazyOctagon-security', {
           createHTML: string => DOMPurify.sanitize(string),
         })
         .createHTML(html);
@@ -195,7 +195,7 @@ export const safeURL = (url: string): string => {
   if (typeof window !== 'undefined' && window.trustedTypes) {
     try {
       return window.trustedTypes
-        .createPolicy('crazycube-security', {
+        .createPolicy('CrazyOctagon-security', {
           createScriptURL: string => string,
         })
         .createScriptURL(url);
@@ -241,7 +241,7 @@ export const setSafeInnerHTML = (element: HTMLElement, html: string): void => {
   if (typeof window !== 'undefined' && window.trustedTypes) {
     try {
       element.innerHTML = window.trustedTypes
-        .createPolicy('crazycube-security', {
+        .createPolicy('CrazyOctagon-security', {
           createHTML: string => DOMPurify.sanitize(string),
         })
         .createHTML(html);

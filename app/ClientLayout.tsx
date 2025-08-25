@@ -37,7 +37,7 @@ function WalletEventHandler({ children }: { children: React.ReactNode }) {
 // Purpose: ensure `useWeb3Modal` calls won't crash before init; avoids 403 config fetch by
 // falling back to local defaults when projectId is placeholder.
 if (typeof window !== 'undefined' && !(window as any).web3modal_initialized) {
-  const projectId = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || 'crazycube-project-id';
+  const projectId = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || 'CrazyOctagon-project-id';
   const isEnabled = process.env.NEXT_PUBLIC_WEB3_MODAL_ENABLED !== 'false';
   if (isEnabled) {
     try {

@@ -23,7 +23,7 @@ export function GlobalLanguageSwitcher() {
       return; 
     }
     
-    const hiddenUntil = localStorage.getItem('crazycube:langSwitcher:hiddenUntil');
+    const hiddenUntil = localStorage.getItem('CrazyOctagon:langSwitcher:hiddenUntil');
     if (hiddenUntil) {
       const hiddenUntilTime = parseInt(hiddenUntil, 10);
       if (Date.now() < hiddenUntilTime) {
@@ -32,12 +32,12 @@ export function GlobalLanguageSwitcher() {
         // Automatically show after timeout
         const timeout = setTimeout(() => {
           setHidden(false);
-          localStorage.removeItem('crazycube:langSwitcher:hiddenUntil');
+          localStorage.removeItem('CrazyOctagon:langSwitcher:hiddenUntil');
         }, hiddenUntilTime - Date.now());
         return () => clearTimeout(timeout);
       } else {
         // Timeout expired, show
-        localStorage.removeItem('crazycube:langSwitcher:hiddenUntil');
+        localStorage.removeItem('CrazyOctagon:langSwitcher:hiddenUntil');
         setHidden(false);
         setReady(true);
         return;
@@ -60,7 +60,7 @@ export function GlobalLanguageSwitcher() {
           onClick={() => {
             // Hide for 1 hour
             const hideUntil = Date.now() + 60 * 60 * 1000;
-            localStorage.setItem('crazycube:langSwitcher:hiddenUntil', String(hideUntil));
+            localStorage.setItem('CrazyOctagon:langSwitcher:hiddenUntil', String(hideUntil));
             setHidden(true);
           }}
         >

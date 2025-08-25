@@ -14,7 +14,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: 'CrazyCube - NFT Platform',
+  title: 'CrazyOctagon - NFT Platform',
   description: 'Where cubes cry and joke!',
   manifest: '/manifest.json',
   icons: {
@@ -52,7 +52,7 @@ function RootLayout({
         {/* eslint-disable-next-line @next/next/no-sync-scripts */}
         <script src='/trusted-types-tinyfill.js' suppressHydrationWarning />
       </head>
-      <body className={inter.className}>
+      <body className={`theme-monad ${inter.className}`}>
               {/* moved to ViewportFix component */}
       <ViewportFix />
 <ClientLayout>{children}</ClientLayout>

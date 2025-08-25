@@ -223,7 +223,7 @@ export function UserNFTsPreview() {
         </CardHeader>
         <CardContent>
           <div className='text-center text-orange-400'>
-            You do not own any CrazyCube NFTs yet.
+            You do not own any CrazyOctagon NFTs yet.
           </div>
         </CardContent>
       </Card>

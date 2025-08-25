@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useCrazyCubeGame } from '@/hooks/useCrazyCubeGame';
+import { useCrazyOctagonGame } from '@/hooks/useCrazyOctagonGame';
 import { useAlchemyNfts } from '@/hooks/useAlchemyNfts';
 import { useAccount } from 'wagmi';
 import { Card } from '@/components/ui/card';
@@ -53,7 +53,7 @@ const ERC721_ENUM_ABI = [
 export default function UserNftsList() {
   const { address, isConnected } = useAccount();
   const { nfts: alchemyNfts, isLoading: alchemyLoading } = useAlchemyNfts();
-  const { getNFTGameData } = useCrazyCubeGame();
+  const { getNFTGameData } = useCrazyOctagonGame();
   const { t } = useTranslation();
 
   const [loading, setLoading] = useState(false);
@@ -167,7 +167,7 @@ export default function UserNftsList() {
           <p className='text-red-400 text-sm text-center'>{error}</p>
         ) : nfts.length === 0 ? (
           <p className='text-slate-300 text-sm text-center'>
-            {t('info.noNfts', "You don't own any CrazyCube NFTs.")}
+            {t('info.noNfts', "You don't own any CrazyOctagon NFTs.")}
           </p>
         ) : (
           <>

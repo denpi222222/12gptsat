@@ -708,7 +708,7 @@ export default function VoxelEngine({ onExit }: VoxelEngineProps) {
           🎮 WASD: Move | Space: Jump | Shift: Run | ESC: Exit
         </div>
         <div className='mt-1 text-yellow-400 text-xs'>
-          🎯 Your Cubie Detective explores the CrazyCube world!
+          🎯 Your Cubie Detective explores the CrazyOctagon world!
         </div>
       </div>
 
@@ -717,7 +717,7 @@ export default function VoxelEngine({ onExit }: VoxelEngineProps) {
         <div className='absolute inset-0 bg-black/80 flex items-center justify-center'>
           <div className='text-center text-white p-8 bg-slate-800/90 rounded-xl max-w-md'>
             <h2 className='text-2xl font-bold mb-4 text-cyan-400'>
-              🌌 CrazyCube World
+              🌌 CrazyOctagon World
             </h2>
             <div className='space-y-3 text-left mb-6'>
               <div>

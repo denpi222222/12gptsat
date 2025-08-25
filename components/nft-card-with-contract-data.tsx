@@ -43,7 +43,7 @@ export function NFTCard({
   } = useNFTContractInfo(tokenIdDecimal);
 
   const imageUrl = getNFTImage(nft);
-  const nftName = getNFTName(nft) || `CrazyCube #${tokenIdDecimal}`;
+  const nftName = getNFTName(nft) || `CrazyOctagon #${tokenIdDecimal}`;
 
   const { t } = useTranslation();
 

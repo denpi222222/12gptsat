@@ -38,7 +38,7 @@ export function UnderConstruction() {
       <div className='mb-6 w-20 h-20 relative'>
         <Image
           src='/images/cra-token.png'
-          alt='CrazyCube Logo'
+          alt='CrazyOctagon Logo'
           width={80}
           height={80}
           className='object-contain drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]'

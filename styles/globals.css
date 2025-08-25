@@ -3,65 +3,33 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    /* Modern Crypto Design System */
-    --background: 210 11% 4%; /* #0A0A0B - Almost black */
-    --foreground: 180 100% 90%; /* #E6FFFF - Light cyan */
-    --card: 210 11% 10%; /* #1A1A1D - Dark surface */
-    --card-foreground: 180 100% 90%;
-    --popover: 210 11% 8%; /* Slightly lighter than background */
-    --popover-foreground: 180 100% 90%;
-    --primary: 195 100% 50%; /* #00D4FF - Bright cyan */
-    --primary-foreground: 210 11% 4%;
-    --secondary: 258 92% 61%; /* #7C3AED - Purple */
-    --secondary-foreground: 180 100% 90%;
-    --muted: 210 11% 15%; /* Muted surface */
-    --muted-foreground: 180 20% 70%;
-    --accent: 195 100% 50%; /* Same as primary */
-    --accent-foreground: 210 11% 4%;
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 180 100% 90%;
-    --border: 195 100% 20%; /* Dark cyan border */
-    --input: 210 11% 15%;
-    --ring: 195 100% 50%; /* Bright cyan focus ring */
-    --radius: 0.75rem; /* Increased border radius */
+  .theme-monad {
+    --monad-black: 0 0% 0%;
+    --monad-purple: 266 86% 59%;
+    --monad-blue: 211 100% 50%;
+    --monad-berry: 326 100% 35%;
+    --monad-offwhite: 40 10% 96%;
 
-    /* Custom crypto colors */
-    --neon-cyan: 195 100% 50%; /* #00D4FF */
-    --neon-purple: 258 92% 61%; /* #7C3AED */
-    --neon-green: 142 76% 36%; /* #22C55E */
-    --surface-dark: 210 11% 10%; /* #1A1A1D */
-    --surface-darker: 210 11% 4%; /* #0A0A0B */
-
-    /* Chart colors - updated for crypto theme */
-    --chart-1: 195 100% 50%; /* Cyan */
-    --chart-2: 258 92% 61%; /* Purple */
-    --chart-3: 142 76% 36%; /* Green */
-    --chart-4: 38 92% 50%; /* Gold */
-    --chart-5: 0 84% 60%; /* Red */
-  }
-
-  .dark {
-    /* Use same colors for dark mode since we're crypto-themed */
-    --background: 210 11% 4%;
-    --foreground: 180 100% 90%;
-    --card: 210 11% 10%;
-    --card-foreground: 180 100% 90%;
-    --popover: 210 11% 8%;
-    --popover-foreground: 180 100% 90%;
-    --primary: 195 100% 50%;
-    --primary-foreground: 210 11% 4%;
-    --secondary: 258 92% 61%;
-    --secondary-foreground: 180 100% 90%;
-    --muted: 210 11% 15%;
-    --muted-foreground: 180 20% 70%;
-    --accent: 195 100% 50%;
-    --accent-foreground: 210 11% 4%;
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 180 100% 90%;
-    --border: 195 100% 20%;
-    --input: 210 11% 15%;
-    --ring: 195 100% 50%;
+    --background: var(--monad-black);
+    --foreground: var(--monad-offwhite);
+    --card: 0 0% 7%;
+    --card-foreground: var(--monad-offwhite);
+    --popover: 0 0% 5%;
+    --popover-foreground: var(--monad-offwhite);
+    --primary: var(--monad-purple);
+    --primary-foreground: var(--monad-offwhite);
+    --secondary: var(--monad-blue);
+    --secondary-foreground: var(--monad-offwhite);
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+    --accent: var(--monad-berry);
+    --accent-foreground: var(--monad-offwhite);
+    --destructive: var(--monad-berry);
+    --destructive-foreground: var(--monad-offwhite);
+    --border: var(--monad-purple);
+    --input: var(--monad-purple);
+    --ring: var(--monad-blue);
+    --radius: 0.75rem;
   }
 }
 
@@ -87,8 +55,23 @@
   @apply font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary;
 }
 
-.neon-button {
-  @apply bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-primary-foreground font-semibold rounded-xl transition-all duration-200 shadow-lg shadow-primary/25;
+/* Button for Monad theme */
+.btn-monad {
+  @apply relative overflow-hidden bg-gradient-to-r from-[hsl(var(--monad-purple))] to-[hsl(var(--monad-blue))] text-[hsl(var(--monad-offwhite))];
+}
+.btn-monad::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(255,255,255,0.4) 10%, transparent 40%);
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.6s, opacity 0.6s;
+}
+.btn-monad:active::after {
+  transform: scale(4);
+  opacity: 0;
+  transition: 0s;
 }
 
 .crypto-card {
@@ -121,25 +104,61 @@
   @apply text-base leading-relaxed;
 }
 
-/* Updated legacy classes to use new system */
-.ape-border {
-  @apply neon-border;
+/* Backgrounds and effects for Monad pages */
+.ping-bg {
+  background:
+    radial-gradient(circle at center, rgba(108,63,240,0.2) 0%, transparent 60%),
+    radial-gradient(circle at 70% 30%, rgba(0,99,255,0.15) 0%, transparent 60%),
+    hsl(var(--background));
 }
 
-.ape-glow {
-  @apply neon-glow;
+.bridge-bg {
+  background:
+    repeating-linear-gradient(135deg, rgba(108,63,240,0.15) 0px, rgba(108,63,240,0.15) 2px, transparent 2px, transparent 20px);
 }
 
-.ape-text {
-  @apply neon-text;
+.arrow-anim {
+  animation: arrow-move 1s infinite alternate;
 }
 
-.ape-button {
-  @apply neon-button;
+@keyframes arrow-move {
+  from { transform: translateX(-2px); }
+  to { transform: translateX(2px); }
 }
 
-.ape-card {
-  @apply crypto-card;
+.burn-bg {
+  background: radial-gradient(circle at center, hsl(var(--monad-berry)) 0%, hsl(var(--monad-purple)) 70%, hsl(var(--monad-black)) 100%);
+}
+
+.graveyard-bg {
+  background: hsl(var(--monad-purple));
+  position: relative;
+}
+.graveyard-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,0.05) 0%, transparent 60%),
+    radial-gradient(circle at 80% 40%, rgba(255,255,255,0.05) 0%, transparent 60%),
+    radial-gradient(circle at 40% 80%, rgba(255,255,255,0.05) 0%, transparent 60%);
+}
+
+.shimmer {
+  position: relative;
+  overflow: hidden;
+}
+.shimmer::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.3), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
 }
 
 /* Add these mobile optimizations at the end of the file */
@@ -497,26 +516,6 @@
   transition-duration: var(--transition-duration) !important;
 }
 
-/* Simplify cards in lite mode */
-.lite-mode .ape-card {
-  @apply bg-slate-800 border border-slate-600;
-  box-shadow: none;
-  backdrop-filter: none;
-}
-
-/* Remove complex gradients in lite mode */
-.lite-mode .ape-text {
-  @apply text-cyan-400;
-  background: none;
-  -webkit-background-clip: unset;
-}
-
-/* Simplify buttons in lite mode */
-.lite-mode .ape-button {
-  @apply bg-blue-600 hover:bg-blue-700;
-  background-image: none;
-}
-
 /* Remove particle effects in lite mode */
 .lite-mode .particle-effect {
   display: none !important;
@@ -530,14 +529,6 @@
 
 /* Mobile optimizations for lite mode */
 @media (max-width: 768px) {
-  .lite-mode .ape-card {
-    @apply p-3;
-  }
-
-  .lite-mode .ape-button {
-    @apply text-base py-2 px-4;
-  }
-
   .lite-mode .text-mobile-lg {
     @apply text-base;
   }

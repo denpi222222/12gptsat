@@ -33,7 +33,7 @@ export async function GET(request: NextRequest) {
     }
 
     const ownerAddr = parseResult.data as `0x${string}`;
-    const contractAddr = apeChain.contracts.crazyCubeNFT.address;
+    const contractAddr = apeChain.contracts.CrazyOctagonNFT.address;
 
     // Get NFT balance using balanceOf
     const balanceCall = await alchemyFetch('rpc', '', {
@@ -121,26 +121,26 @@ export async function GET(request: NextRequest) {
           tokenType: 'ERC721',
         },
       },
-      title: `CrazyCube #${tokenId}`,
-      description: `CrazyCube NFT #${tokenId}`,
+      title: `CrazyOctagon #${tokenId}`,
+      description: `CrazyOctagon NFT #${tokenId}`,
       tokenUri: {
-        raw: `https://api.crazycube.com/metadata/${tokenId}`,
-        gateway: `https://api.crazycube.com/metadata/${tokenId}`,
+        raw: `https://api.CrazyOctagon.com/metadata/${tokenId}`,
+        gateway: `https://api.CrazyOctagon.com/metadata/${tokenId}`,
       },
       media: [
         {
-          raw: `https://api.crazycube.com/images/${tokenId}.png`,
-          gateway: `https://api.crazycube.com/images/${tokenId}.png`,
-          thumbnail: `https://api.crazycube.com/images/${tokenId}.png`,
+          raw: `https://api.CrazyOctagon.com/images/${tokenId}.png`,
+          gateway: `https://api.CrazyOctagon.com/images/${tokenId}.png`,
+          thumbnail: `https://api.CrazyOctagon.com/images/${tokenId}.png`,
           format: 'png',
           bytes: 0,
         },
       ],
       metadata: {
-        name: `CrazyCube #${tokenId}`,
-        description: `CrazyCube NFT #${tokenId}`,
-        image: `https://api.crazycube.com/images/${tokenId}.png`,
-        external_url: `https://crazycube.com/nft/${tokenId}`,
+        name: `CrazyOctagon #${tokenId}`,
+        description: `CrazyOctagon NFT #${tokenId}`,
+        image: `https://api.CrazyOctagon.com/images/${tokenId}.png`,
+        external_url: `https://CrazyOctagon.com/nft/${tokenId}`,
         attributes: [],
       },
       timeLastUpdated: new Date().toISOString(),

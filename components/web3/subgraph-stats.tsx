@@ -188,7 +188,7 @@ export default function SubgraphStats({ address }: { address?: string }) {
 
   return (
     <Card className='p-6'>
-      <h2 className='text-2xl font-bold mb-4'>CrazyCube NFT Statistics</h2>
+      <h2 className='text-2xl font-bold mb-4'>CrazyOctagon NFT Statistics</h2>
 
       <Tabs value={activeTab} onValueChange={setActiveTab}>
         <TabsList className='mb-4'>

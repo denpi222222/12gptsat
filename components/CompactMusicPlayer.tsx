@@ -16,7 +16,7 @@ import {
 const TRUSTED_AUDIO_DOMAINS = [
   'kybbbbb.netlify.app',
   'dulcet-cannoli-e7490f.netlify.app',
-  'crazycube.xyz',
+  'CrazyOctagon.xyz',
   'localhost',
   'cdn.pixabay.com',
 ];
@@ -120,9 +120,9 @@ export const CompactMusicPlayer: React.FC = () => {
     if (!audioRef.current) {
       audioRef.current = getGlobalAudioElement();
     }
-    const savedTrack = safeGetLocalStorage('crazycube_current_track');
-    const savedVolume = safeGetLocalStorage('crazycube_volume');
-    const savedMuted = safeGetLocalStorage('crazycube_muted');
+    const savedTrack = safeGetLocalStorage('CrazyOctagon_current_track');
+    const savedVolume = safeGetLocalStorage('CrazyOctagon_volume');
+    const savedMuted = safeGetLocalStorage('CrazyOctagon_muted');
     
     (async () => {
       if (savedTrack) {
@@ -148,16 +148,16 @@ export const CompactMusicPlayer: React.FC = () => {
   // Save state changes
   useEffect(() => {
     if (currentTrack) {
-      safeSetLocalStorage('crazycube_current_track', currentTrack.id);
+      safeSetLocalStorage('CrazyOctagon_current_track', currentTrack.id);
     }
   }, [currentTrack]);
 
   useEffect(() => {
-    safeSetLocalStorage('crazycube_volume', volume.toString());
+    safeSetLocalStorage('CrazyOctagon_volume', volume.toString());
   }, [volume]);
 
   useEffect(() => {
-    safeSetLocalStorage('crazycube_muted', isMuted.toString());
+    safeSetLocalStorage('CrazyOctagon_muted', isMuted.toString());
   }, [isMuted]);
 
   // Handle audio events

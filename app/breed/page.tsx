@@ -17,7 +17,7 @@ import { useTranslation, Trans } from 'react-i18next';
 import Image from 'next/image';
 import { BreedingEffect } from '@/components/breeding-effect';
 
-import { useCrazyCubeGame } from '@/hooks/useCrazyCubeGame';
+import { useCrazyOctagonGame } from '@/hooks/useCrazyOctagonGame';
 import { usePublicClient, useAccount, useConnect } from 'wagmi';
 import { parseEther } from 'viem';
 
@@ -140,7 +140,7 @@ export default function BreedPage() {
     [tokenId: number]: { currentStars: number; isActivated: boolean };
   }>({});
 
-  const { getNFTGameData } = useCrazyCubeGame();
+  const { getNFTGameData } = useCrazyOctagonGame();
   const {
     breedCost,
     breedNFTs,
@@ -154,7 +154,7 @@ export default function BreedPage() {
     CRAA_TOKEN_ADDRESS,
     CRAA_TOKEN_ABI,
     GAME_CONTRACT_ADDRESS,
-  } = useCrazyCubeGame();
+  } = useCrazyOctagonGame();
 
   // Use new hook to check graveyard readiness
   const {
@@ -577,7 +577,7 @@ export default function BreedPage() {
                           components={{
                             a: (
                               <a
-                                href='https://magiceden.io/ru/collections/apechain/crazycube-2'
+                                href='https://magiceden.io/ru/collections/apechain/CrazyOctagon-2'
                                 target='_blank'
                                 rel='noopener noreferrer'
                                 className='text-cyan-400 hover:text-cyan-300 underline'
@@ -662,7 +662,7 @@ export default function BreedPage() {
               <p className='text-gray-300'>
                 {tr(
                   'sections.breed.loadingNftsDesc',
-                  'Fetching your CrazyCube collection'
+                  'Fetching your CrazyOctagon collection'
                 )}
               </p>
             </div>
@@ -677,7 +677,7 @@ export default function BreedPage() {
               <p className='text-gray-300'>
                 {tr(
                   'sections.breed.noNftsFoundDesc',
-                  "You don't have any CrazyCube NFTs to breed"
+                  "You don't have any CrazyOctagon NFTs to breed"
                 )}
               </p>
               <Link href='/' className='mt-4 inline-block'>
